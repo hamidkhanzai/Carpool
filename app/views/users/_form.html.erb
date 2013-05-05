@@ -1,10 +1,10 @@
 <%= form_for(@user) do |f| %>
     <div class="field">
-      <%= f.label "First_Name" %><br />
+      <%= f.label :First_Name %><br />
       <%= f.text_field :first_name %>
     </div>
     <div class="field">
-      <%= f.label "Last Name" %><br />
+      <%= f.label :Last_Name %><br />
       <%= f.text_field :last_name %>
     </div>
     <div class="field">
@@ -12,7 +12,7 @@
       <%= f.text_field :username %>
     </div>
     <div class="field">
-      <%= f.label "Password" %>
+      <%= f.label :Password %>  <br>
       <%= f.password_field :password %>
     </div>
     <div class="field">
@@ -24,11 +24,11 @@
       <%= f.text_field :phone %>
     </div>
     <div class="field">
-      <%= f.label "NID No" %><br />
+      <%= f.label :NID_No %><br />
       <%= f.number_field :nid_no %>
     </div>
     <div class="field">
-      <%= f.label "Licence No" %>
+      <%= f.label :Licence_No %>    <br>
       <%= f.number_field :licence_no %>
     </div>
 

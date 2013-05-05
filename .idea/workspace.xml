@@ -8,10 +8,10 @@
     <file path="/index.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367781734429" ignored="false" />
     <file path="/routes.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367771984042" ignored="false" />
     <file path="/users_controller.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367782886337" ignored="false" />
-    <file path="/_form.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367782502426" ignored="false" />
+    <file path="/_form.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367788981635" ignored="false" />
     <file path="$PROJECT_DIR$/../../rails_projects/simple_cms/app/views/pages/_form.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367775199040" ignored="false" />
     <file path="/Dummy.txt" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367782491146" ignored="false" />
-    <file path="/new.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367781826884" ignored="false" />
+    <file path="/new.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367788877513" ignored="false" />
     <file path="$PROJECT_DIR$/../../rails_projects/simple_cms/app/controllers/subjects_controller.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367781694995" ignored="false" />
     <file path="/user.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367782005717" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="261" selection-end="261" vertical-scroll-proportion="0.44894367">
+            <state line="18" column="25" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,16 +72,16 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.6153846">
+            <state line="4" column="41" selection-start="86" selection-end="86" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="79" selection-end="79" vertical-scroll-proportion="-0.6666667">
+            <state line="30" column="29" selection-start="842" selection-end="842" vertical-scroll-proportion="0.934236">
               <folding />
             </state>
           </provider>
@@ -104,10 +104,10 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130505145813_create_users.rb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -688,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="56" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
@@ -709,16 +702,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="79" selection-end="79" vertical-scroll-proportion="-0.6666667">
+        <state line="18" column="25" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="261" selection-end="261" vertical-scroll-proportion="0.44894367">
+        <state line="4" column="41" selection-start="86" selection-end="86" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="29" selection-start="842" selection-end="842" vertical-scroll-proportion="0.934236">
           <folding />
         </state>
       </provider>
