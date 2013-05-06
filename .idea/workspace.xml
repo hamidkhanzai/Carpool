@@ -5,15 +5,21 @@
     <ignored path="carpool.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/20130505145813_create_users.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367781114284" ignored="false" />
-    <file path="/index.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367781734429" ignored="false" />
+    <file path="/index.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367854107193" ignored="false" />
     <file path="/routes.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367771984042" ignored="false" />
-    <file path="/users_controller.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367782886337" ignored="false" />
-    <file path="/_form.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367788981635" ignored="false" />
+    <file path="/users_controller.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367848161913" ignored="false" />
+    <file path="/_form.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367854722134" ignored="false" />
     <file path="$PROJECT_DIR$/../../rails_projects/simple_cms/app/views/pages/_form.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367775199040" ignored="false" />
-    <file path="/Dummy.txt" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367782491146" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367850641902" ignored="false" />
     <file path="/new.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367788877513" ignored="false" />
     <file path="$PROJECT_DIR$/../../rails_projects/simple_cms/app/controllers/subjects_controller.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367781694995" ignored="false" />
-    <file path="/user.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367782005717" ignored="false" />
+    <file path="/user.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367796562361" ignored="false" />
+    <file path="/edit.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367794070569" ignored="false" />
+    <file path="$PROJECT_DIR$/../../rails_projects/simple_cms/app/models/subject.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367796157107" ignored="false" />
+    <file path="/subject.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367796139559" ignored="false" />
+    <file path="/Rails carpool: development" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367848286088" ignored="false" />
+    <file path="/a.sql" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367848797800" ignored="false" />
+    <file path="/a.rxml" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367848805362" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +33,11 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="carpool" />
@@ -36,7 +47,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="56" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -45,7 +56,16 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+            <state line="32" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="45" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,16 +83,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="40" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="41" selection-start="86" selection-end="86" vertical-scroll-proportion="-2.6153846">
+            <state line="0" column="17" selection-start="12" selection-end="17" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -81,7 +92,43 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="29" selection-start="842" selection-end="842" vertical-scroll-proportion="0.934236">
+            <state line="15" column="14" selection-start="480" selection-end="480" vertical-scroll-proportion="0.76347303">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="20" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6136" column="17" selection-start="130654" selection-end="130654" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="54" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,10 +150,14 @@
       <list>
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130505145813_create_users.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="db-console:/5f2139e6/a9a53f17-0618-484d-8add-522ebec53777/" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
       </list>
     </option>
@@ -119,10 +170,43 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="10" />
-    <option name="width" value="1346" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SQL</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Rails</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -150,6 +234,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,6 +325,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -290,18 +380,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../rails_projects/simple_cms" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/jre/jre/lib/mysql-connector-java-5.1.24-bin.jar" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -525,6 +631,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" name="Default" comment="" />
@@ -534,19 +657,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="10" width="1346" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32045454" sideWeight="0.6694079" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25778815" sideWeight="0.6689189" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2590909" sideWeight="0.6694079" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3310811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3305921" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -619,41 +745,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/db/migrate/20130505145813_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="355" selection-end="365" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130505145813_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="28" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -664,11 +755,6 @@
         <state line="13" column="13" selection-start="424" selection-end="424" vertical-scroll-proportion="0.39045936" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="81" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" />
@@ -676,21 +762,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="0.045698926">
-          <folding />
-        </state>
+        <state line="1" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="0.045698926" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="40" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="56" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+        <state line="4" column="45" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -702,23 +779,283 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6136" column="17" selection-start="130654" selection-end="130654" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="54" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="86" selection-end="86" vertical-scroll-proportion="-2.6153846">
+        <state line="2" column="20" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/5f2139e6/a9a53f17-0618-484d-8add-522ebec53777/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="20" selection-start="0" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/a9a53f17-0618-484d-8add-522ebec53777">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>a9a53f17-0618-484d-8add-522ebec53777</OriginalElement>
+          <nodes>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.func</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_TABLESTATS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.socket_instances</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.staff</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.COLLATIONS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_CMP</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.session_connect_attrs</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_history</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.TABLE_CONSTRAINTS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.customer_list</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.PLUGINS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.users</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.slave_master_info</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.inventry</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_CMP_PER_INDEX</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.PROCESSLIST</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_FT_CONFIG</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.USER_PRIVILEGES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.innodb_table_stats</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.GLOBAL_STATUS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.hosts</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.TABLE_PRIVILEGES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.customer</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.VIEWS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.procs_priv</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.usertype</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.TRIGGERS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_summary_by_instance</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.sections</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.COLUMNS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.FILES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.PROFILING</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_FIELDS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.cooperative</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.country</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.GLOBAL_VARIABLES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.film</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_history_long</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.slave_relay_log_info</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.usertype</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.cond_instances</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.table_io_waits_summary_by_index_usage</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_summary_by_account_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.TABLES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.SCHEMA_PRIVILEGES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.setup_timers</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.threads</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.ROUTINES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.slave_worker_info</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.socket_summary_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:world.countrylanguage</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.help_keyword</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.plugin</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.time_zone</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.objects_summary_global_by_type</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.EVENTS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_BUFFER_POOL_STATS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_LOCK_WAITS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.SCHEMATA</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.table_lock_waits_summary_by_table</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.address</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.actor_info</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.rwlock_instances</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.time_zone_transition</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.project</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_summary_global_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_summary_by_user_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_summary_by_host_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_INDEXES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.coorgnization</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.session_account_connect_attrs</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_current</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.tables_priv</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_summary_by_host_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_FT_INSERTED</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.innodb_index_stats</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:railspro_development.schema_migrations</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.event</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.users</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.STATISTICS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.accounts</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_summary_by_user_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:carpool_development.users</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_history_long</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.mutex_instances</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.film_list</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_FOREIGN</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.coorgnization</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.proxies_priv</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_BUFFER_PAGE_LRU</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.db</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_summary_by_host_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.help_relation</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.employee</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.OPTIMIZER_TRACE</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.category</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.file_summary_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.table_io_waits_summary_by_table</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.CHARACTER_SETS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_summary_global_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_current</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.PARAMETERS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.ndb_binlog_index</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_CMPMEM_RESET</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.REFERENTIAL_CONSTRAINTS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_TRX</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_DATAFILES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.time_zone_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.file_summary_by_instance</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.section_edits</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.pages</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.general_log</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_FT_DELETED</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_current</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.PARTITIONS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_summary_by_thread_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.staff_list</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.admin_users_pages</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.sales_by_film_category</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.setup_consumers</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_summary_by_thread_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:railspro_development.posts</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_history</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_METRICS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.nicer_but_slower_film_list</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:world.city</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.host_cache</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.report</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.inventory</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.help_topic</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.COLLATION_CHARACTER_SET_APPLICABILITY</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.TABLESPACES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.language</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.proc</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_CMPMEM</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.ENGINES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.COLUMN_PRIVILEGES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_FT_BEING_DELETED</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_CMP_PER_INDEX_RESET</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.time_zone_transition_type</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.subjects</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.setup_instruments</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.schema_migrations</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.project</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_TABLES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.cooperative</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:world.country</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.inventry</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.setup_actors</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.report</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.film_actor</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_history_long</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.time_zone_leap_second</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.user</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.users</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_FT_INDEX_CACHE</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.socket_summary_by_instance</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_summary_global_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_summary_by_user_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.admin_users</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.department</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_TABLESPACES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.rental</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_FOREIGN_COLS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_stages_summary_by_account_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.SESSION_VARIABLES</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.help_category</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:railspro_development.high_scores</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.district</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.sales_by_store</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.department</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_SYS_COLUMNS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_summary_by_thread_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:naild.employee</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:simple_cms_development.district</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.columns_priv</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.performance_timers</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.KEY_COLUMN_USAGE</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.slow_log</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_summary_by_digest</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_BUFFER_PAGE</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.film_category</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_CMP_RESET</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.film_text</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.store</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:carpool_development.schema_migrations</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.actor</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_LOCKS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.payment</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.SESSION_STATUS</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:railspro_development.subjects</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:railspro_development.pages</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_FT_DEFAULT_STOPWORD</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:mysql.servers</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_waits_summary_by_account_by_event_name</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:sakila.city</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.file_instances</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.setup_objects</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:information_schema.INNODB_FT_INDEX_TABLE</node>
+            <node x="" y="">a9a53f17-0618-484d-8add-522ebec53777.table:performance_schema.events_statements_history</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.08230386651692603" x="3048.652046783626" y="3026.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="12" selection-end="17" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="842" selection-end="842" vertical-scroll-proportion="0.934236">
+        <state line="15" column="14" selection-start="480" selection-end="480" vertical-scroll-proportion="0.76347303">
           <folding />
         </state>
       </provider>

@@ -1,38 +1,56 @@
-<%= form_for(@user) do |f| %>
-    <div class="field">
-      <%= f.label :First_Name %><br />
-      <%= f.text_field :first_name %>
-    </div>
-    <div class="field">
-      <%= f.label :Last_Name %><br />
-      <%= f.text_field :last_name %>
-    </div>
-    <div class="field">
-      <%= f.label :"User Name" %><br />
-      <%= f.text_field :username %>
-    </div>
-    <div class="field">
-      <%= f.label :Password %>  <br>
-      <%= f.password_field :password %>
-    </div>
-    <div class="field">
-      <%= f.label :Email %><br />
-      <%= f.email_field :email %>
-    </div>
-       <div class="field">
-      <%= f.label :Phone %><br />
-      <%= f.text_field :phone %>
-    </div>
-    <div class="field">
-      <%= f.label :NID_No %><br />
-      <%= f.number_field :nid_no %>
-    </div>
-    <div class="field">
-      <%= f.label :Licence_No %>    <br>
-      <%= f.number_field :licence_no %>
-    </div>
+<%= form_for(@user,{:class=>"form-horizontal"}) do |f| %>
+    <div class="alert-danger">
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this page from being saved:</h2>
 
-    <div class="actions">
-      <%= f.submit %>
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
     </div>
+        <div  >
+      <table  >
+    <tr>
+      <td><%= f.label "First_Name",:class=>"label"%></td>
+      <td><%= f.text_field :first_name %> </td>
+    </tr>
+    <tr>
+     <td> <%= f.label :Last_Name %></td>
+      <td><%= f.text_field :last_name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :"User Name" %><br /></td>
+      <td><%= f.text_field :username %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :Password %> </td>
+      <td><%= f.password_field :password %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :Email %></td>
+      <td><%= f.email_field :email %></td>
+    </tr>
+       <tr>
+      <td><%= f.label :Phone %></td>
+      <td><%= f.text_field :phone %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :NID_No %><br /></td>
+      <td><%= f.number_field :nid_no %>        </td>
+    </tr>
+    <tr>
+      <td><%= f.label :Licence_No%>    </td>
+      <td><%= f.number_field :licence_no, :class=>"" %></td>
+    </tr>
+
+    <tr >
+      <td colspan="2">&nbsp;&nbsp;&nbsp;<%= f.submit :class=>"btn btn-primary" %></td>
+    </tr>
+      </table>
+
+        </div>
 <% end %>

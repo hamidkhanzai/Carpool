@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="290754830">
+  <component name="DataSourceManagerImpl" format="xml" hash="2369266606">
     <data-source source="LOCAL" name="Rails carpool: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="02bf4503-4664-4161-bac3-596215dbe58d">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/carpool_test</jdbc-url>
@@ -21,13 +21,15 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails carpool: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="a9a53f17-0618-484d-8add-522ebec53777">
+    <data-source source="LOCAL" name="Rails carpool: development" product="MySQL" version="5.6.10" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )" uuid="a9a53f17-0618-484d-8add-522ebec53777">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/carpool_development</jdbc-url>
       <user-name>root</user-name>
       <libraries>
         <library>
-          <url>file://</url>
+          <url>file://$APPLICATION_HOME_DIR$/jre/jre/lib/mysql-connector-java-5.1.24-bin.jar</url>
         </library>
       </libraries>
     </data-source>

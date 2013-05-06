@@ -1,1 +1,35 @@
-                      this is index page
+<div class="table">
+  <h2>Users</h2>
+  <table summary="users list" class="table table-striped">
+    <tr class="success">
+      <th>&nbsp;</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>User Name</th>
+      <th>Password</th>
+      <th>Email</th>
+      <th>NID No</th>
+      <th>Licence No</th>
+      <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</th>
+    </tr>
+    <%@users.each do |user| %>
+        <tr>
+          <td>&nbsp;</td>
+          <td><%=user.first_name %></td>
+          <td><%=user.last_name%></td>
+          <td><%=user.username %></td>
+          <td><%=user.password %></td>
+          <td><%=user.email %></td>
+          <td><%=user.nid_no %></td>
+          <td><%=user.licence_no %></td>
+
+          <td><%= link_to("Edit",{:action => "edit", :id=>user.id},:class => "action edit") %></td>
+          <td><%= link_to 'Destroy', user, method: :delete, data: { alert: 'Are you sure?' } %></td>
+
+
+        </tr>
+    <% end %>
+
+  </table>
+  <%= link_to 'Create New User', new_user_path %>
+</div>
