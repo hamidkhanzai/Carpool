@@ -5694,6 +5694,7 @@ a.badge:focus {
 .label-info,
 .badge-info {
     background-color: #3a87ad;
+    height: 18px;
 }
 
 .label-info[href],

@@ -15,35 +15,40 @@
         <div  >
       <table  >
     <tr>
-      <td><%= f.label "First_Name",:class=>"label"%></td>
+      <td><%= f.label "First_Name",:class=>"label label-info"%></td>
       <td><%= f.text_field :first_name %> </td>
     </tr>
     <tr>
-     <td> <%= f.label :Last_Name %></td>
+     <td> <%= f.label :Last_Name ,:class=>"label label-info"%></td>
       <td><%= f.text_field :last_name %></td>
     </tr>
     <tr>
-      <td><%= f.label :"User Name" %><br /></td>
+      <td><%= f.label :"User Name",:class=>"label label-info" %><br /></td>
       <td><%= f.text_field :username %></td>
     </tr>
     <tr>
-      <td><%= f.label :Password %> </td>
+      <td><%= f.label :Password,:class=>"label label-info" %> </td>
       <td><%= f.password_field :password %></td>
     </tr>
+        <tr>
+          <td><%= f.label :Confirm_Pass,:class=>"label label-info" %> </td>
+          <td><%= f.password_field :password_confirmation %></td>
+        </tr>
+
     <tr>
-      <td><%= f.label :Email %></td>
+      <td><%= f.label :Email,:class=>"label label-info" %></td>
       <td><%= f.email_field :email %></td>
     </tr>
        <tr>
-      <td><%= f.label :Phone %></td>
+      <td><%= f.label :Phone,:class=>"label label-info" %></td>
       <td><%= f.text_field :phone %></td>
     </tr>
     <tr>
-      <td><%= f.label :NID_No %><br /></td>
+      <td><%= f.label :NID_No ,:class=>"label label-info"%><br /></td>
       <td><%= f.number_field :nid_no %>        </td>
     </tr>
     <tr>
-      <td><%= f.label :Licence_No%>    </td>
+      <td><%= f.label :Licence_No,:class=>"label label-info"%>    </td>
       <td><%= f.number_field :licence_no, :class=>"" %></td>
     </tr>
 

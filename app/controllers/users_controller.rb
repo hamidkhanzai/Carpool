@@ -29,9 +29,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def delete
+
+  end
   def destroy
     @user=User.find(params[:id])
     @user.destroy
-    redirect_to('index')
+    redirect_to(:action=>'index')
   end
 end
