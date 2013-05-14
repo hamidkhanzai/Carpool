@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   def list
-    @users= User.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
+
   end
   def new
     @user=User.new
