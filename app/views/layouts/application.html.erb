@@ -7,26 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div>
-  <% if user_signed_in? %>
-      <h2>Welcome here <%= current_user.email %></h2>
-      <%= link_to 'Sign out', destroy_user_session_path, :method => 'delete' %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+    </div>
+    <div class="span10">
+      <!--Body content-->
+        <% if user_signed_in? %>
+            <h3>Welcome here <%= current_user.email %></h3>
+            <%= link_to 'Sign out', destroy_user_session_path, :method => 'delete' %>
 
-  <% else %>
-      <%= link_to 'Sign In', new_user_session_path  %> or <%= link_to 'Sign up',  new_user_registration_path  %>
-  <% end %>
+        <% else %>
+            <%= link_to 'Sign In', new_user_session_path  %> or <%= link_to 'Sign up',  new_user_registration_path  %>
+        <% end %>
+
+      <div class="input-medium">
+        <% if flash[:notice] %>
+            <p class="info"><%= flash[:notice].html_safe?%> </p>
+        <% end %>
+
+        <% if flash[:alert] %>
+            <p class="alert"><%= flash[:alert].html_safe?%></p>
+        <% end %>
+
+      </div>
+      <%= yield %>
+
+    </div>
   </div>
-<div class="input-medium">
-  <% if flash[:notice] %>
-  <p class="info"><%= flash[:notice].html_safe?%> </p>
-  <% end %>
-
-  <% if flash[:alert] %>
-      <p class="alert"><%= flash[:alert].html_safe?%></p>
-  <% end %>
-
 </div>
-<%= yield %>
+
+
 
 </body>
 </html>
