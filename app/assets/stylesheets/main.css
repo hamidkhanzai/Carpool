@@ -7,7 +7,71 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+.pagination {
+    padding: 3px;
+    margin: 15px;
+}
+.pagination a {
+    padding: 2px 5px 2px 5px;
+     margin-bottom: 10px;
+    border: 1px solid #aaaadd;
+    text-decoration: none;
+    color: #000099;
+    padding: 9px 17px;
+    font-size: 15.5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
 
+
+.pagination a:hover,a:active {
+    border: 1px solid #000099;
+    color: white;
+    background-color: #417977;
+
+
+
+}
+.pagination .current {
+
+    border: 1px solid #eee;
+    color: #ddd;
+    padding: 9px 17px;
+    font-size: 15.5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-border-radius: 6px;
+
+
+
+
+}
+.pagination span.disabled {
+    border: 1px solid #eee;
+    color: #ddd;
+    padding: 9px 17px;
+    font-size: 15.5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-border-radius: 6px;
+
+}
+
+
+/*   ------------------------------------------------*/
 .clearfix {
     *zoom: 1;
 }
@@ -234,7 +298,12 @@ a {
     color: #0088cc;
     text-decoration: none;
 }
+div{
 
+
+
+    margin-left: 100px;
+}
 a:hover,
 a:focus {
     color: #005580;
@@ -4962,7 +5031,7 @@ input[type="submit"].btn.btn-mini {
 .breadcrumb > .active {
     color: #999999;
 }
-
+    /*
 .pagination {
     margin: 20px 0;
 }
@@ -5108,7 +5177,7 @@ input[type="submit"].btn.btn-mini {
     padding: 0 6px;
     font-size: 10.5px;
 }
-
+      */
 .pager {
     margin: 20px 0;
     text-align: center;

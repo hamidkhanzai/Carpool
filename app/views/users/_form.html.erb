@@ -22,9 +22,12 @@
      <td> <%= f.label :Last_Name ,:class=>"label label-info"%></td>
       <td><%= f.text_field :last_name %></td>
     </tr>
-    <tr>
+    <tr class="controls">
+
       <td><%= f.label :"User Name",:class=>"label label-info" %><br /></td>
-      <td><%= f.text_field :username %></td>
+      <td><%= f.text_field :username, :class=>"inputInfo" %></td>
+
+
     </tr>
     <tr>
       <td><%= f.label :Password,:class=>"label label-info" %> </td>

@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
-
+  before_filter :authenticate_user!
   def index
-    @users=User.order("created_at DESC")
+    @users=User.find(current_user.id)
+
+    #User.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
+    #   #Post.page(params[:page]).order('created_at DESC')
+
   end
   def new
     @user=User.new
