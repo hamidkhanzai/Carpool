@@ -1,0 +1,47 @@
+<div class="table">
+  <h2>Users</h2>
+  <table summary="users list" class="table table-striped">
+    <tr class="success">
+      <th>&nbsp;</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>User Name</th>
+
+      <th>Email</th>
+      <th>NID No</th>
+      <th>Licence No</th>
+      <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</th>
+    </tr>
+
+
+
+
+
+    <%@users.each do |user| %>
+    <tr>
+      <td>&nbsp;</td>
+      <td><%= user.first_name %></td>
+      <td><%= user.last_name%></td>
+      <td><%= user.username %></td>
+
+      <td><%= user.email %></td>
+      <td><%= user.nid_no %></td>
+      <td><%= user.licence_no %></td>
+
+
+      <td><%= link_to("Edit General Information",{:action => "edit", :id=> user.id},:class => "action edit") %></td>
+      <td> <%= link_to 'Change Password', edit_user_registration_path %></td>
+
+      <td><%= link_to("Delete",{:action=>'destroy',:id=> user.id},:confirm=> "Are You Sour you Want to Delete This Record?", :method => :delete, :class => "action edit") %></td>
+
+
+    </tr>
+
+    <% end %>
+  </table>
+  <div class="table">
+    <%= will_paginate @users,:previous_label=>"<<",:next_label=>">>"  %>
+  </div>
+  <%= link_to 'Create New User', new_user_path %>
+
+</div>

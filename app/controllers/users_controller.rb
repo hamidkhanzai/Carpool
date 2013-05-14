@@ -1,11 +1,22 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
   def index
-    @users=User.find(current_user.id)
+    if current_user.Admin?
+      @users= User.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
+     render  'list'
+    else
+      @users=User.find(current_user.id)
+    end
 
-    #User.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
+
+
+    #
     #   #Post.page(params[:page]).order('created_at DESC')
 
+  end
+
+  def list
+    @users= User.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
   end
   def new
     @user=User.new
