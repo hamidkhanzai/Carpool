@@ -1,18 +1,6 @@
 <%= form_for(@user,{:class=>"form-horizontal"}) do |f| %>
-    <div class="alert-danger">
-    <% if @user.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this page from being saved:</h2>
 
-          <ul>
-            <% @user.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
-    </div>
-        <div  >
+  <div>
       <table  >
     <tr>
       <td><%= f.label "First_Name",:class=>"label label-info"%></td>

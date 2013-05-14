@@ -28,6 +28,10 @@
     -moz-border-radius: 6px;
 }
 
+#error_explanation{
+    display: none;
+}
+
 
 .pagination a:hover,a:active {
     border: 1px solid #000099;
