@@ -1,0 +1,2 @@
+module Routs::RoutsHelper
+end

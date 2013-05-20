@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130520114024) do
+ActiveRecord::Schema.define(:version => 20130520132811) do
 
   create_table "routs", :force => true do |t|
     t.string   "from"
@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(:version => 20130520114024) do
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "free_seats"
+    t.string   "price"
+    t.date     "date"
   end
 
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
