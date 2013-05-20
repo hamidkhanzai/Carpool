@@ -1,6 +1,7 @@
 class RoutsController < ApplicationController
   # GET /routs
   # GET /routs.json
+  before_filter :authenticate_user!
   def index
     @routs = Rout.all
 

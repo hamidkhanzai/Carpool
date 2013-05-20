@@ -1,5 +1,42 @@
-<p id="notice"><%= notice %></p>
 
+<table border="1"  class="table table-stdiped">
+	
+		
+		<tr>
+		<td>From:</td>	
+		<td><%= @rout.from %></td>
+		</tr>
+		<tr>
+		<td>Distanation:</td>
+		<td> <%= @rout.to %></td>
+		</tr>
+			
+		<tr>
+			<td>Price:</td>
+			<td><%= @rout.price %></td>
+			
+		</tr>
+		
+		<tr>
+			<td>Avalible Seats:</td>
+			<td> <%= @rout.free_seats %></td>
+		</tr>
+		<tr>
+			<td>tdavelling Date:</td>
+			<td><%= @rout.date %></td>
+		</tr>
+		
+		
+		
+	<tr>
+		<td>Descriptions:</td>
+		<td> <%= @rout.description %></td>
+	</tr>
+		
+				
+
+	
+</table>
 
 <%= link_to 'Edit', edit_rout_path(@rout) %> |
 <%= link_to 'Back', routs_path %>
