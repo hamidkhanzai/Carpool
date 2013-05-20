@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
 
   validates :phone, :format => {:with => /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/}, :on => :update
 
-
+   has_many :routs
 
   #require 'digest/sha1'
 =begin

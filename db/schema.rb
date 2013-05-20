@@ -11,12 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130513204601) do
+ActiveRecord::Schema.define(:version => 20130520114024) do
+
+  create_table "routs", :force => true do |t|
+    t.string   "from"
+    t.string   "to"
+    t.integer  "userId"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "routs", ["userId"], :name => "index_routs_on_userId"
+
+  create_table "user_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 40
     t.string   "last_name",              :limit => 40
     t.string   "username",               :limit => 30
+    t.string   "password",               :limit => 100
     t.string   "email",                  :limit => 50
     t.string   "phone",                  :limit => 15
     t.integer  "nid_no"
