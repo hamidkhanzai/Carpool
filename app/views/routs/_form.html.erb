@@ -1,0 +1,42 @@
+
+
+<%= form_for(@rout,{:class=>"form-horizontal"}) do |f| %>
+
+  <div>
+      <table  >
+    <tr>
+      <td><%= f.label "from",:class=>"label label-info"%></td>
+      <td><%= f.text_field :from %> </td>
+    </tr>
+    <tr>
+     <td> <%= f.label :Distanation,:class=>"label label-info"%></td>
+      <td><%= f.text_field :to %></td>
+    </tr>
+    <tr class="controls">
+
+      <td><%= f.label :"price",:class=>"label label-info" %><br /></td>
+      <td><%= f.text_field :price, :class=>"inputInfo" %></td>
+
+    </tr>
+       <tr>
+      <td><%= f.label :date,:class=>"label label-info" %></td>
+      <td><%= f.text_field :date %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :free_seats ,:class=>"label label-info"%><br /></td>
+      <td><%= f.number_field :free_seats %>        </td>
+    </tr>
+    <tr>
+      <td><%= f.label :Descriptions ,:class=>"label label-info"%><br /></td>
+      <td><%= f.text_area :description %>        </td>
+    </tr>
+        
+
+    <tr >
+      <td colspan="2">&nbsp;&nbsp;&nbsp;<%= f.submit :class=>"btn btn-primary" %></td>
+    </tr>
+      </table>
+
+        </div>
+<% end %>
+
