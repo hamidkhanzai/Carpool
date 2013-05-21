@@ -1,19 +1,19 @@
 
-<table border="1"  class="table table-stdiped">
+<table border="2"  class="table table-striped" summary="Routs Description">
 	
 		
-		<tr>
+		<tr >
 		<td>From:</td>	
 		<td><%= @rout.from %></td>
 		</tr>
-		<tr>
+		<tr >
 		<td>Distanation:</td>
 		<td> <%= @rout.to %></td>
 		</tr>
 			
 		<tr>
 			<td>Price:</td>
-			<td><%= @rout.price %></td>
+			<td><%= number_to_currency(@rout.price, :unit => "Afg;", :format => "%n %u") %></td>
 			
 		</tr>
 		
@@ -22,7 +22,7 @@
 			<td> <%= @rout.free_seats %></td>
 		</tr>
 		<tr>
-			<td>tdavelling Date:</td>
+			<td>Travelling Date:</td>
 			<td><%= @rout.date %></td>
 		</tr>
 		
@@ -38,5 +38,7 @@
 	
 </table>
 
-<%= link_to 'Edit', edit_rout_path(@rout) %> |
-<%= link_to 'Back', routs_path %>
+<%= link_to 'Edit The Rout', edit_rout_path(@rout) %> |
+<%= link_to 'Back to the Routs', routs_path %>|
+<%= link_to 'Delete This Rout', @rout, method: :delete, data: { confirm: 'Are you sure?' } %>|
+<%= link_to 'Create New Rout', new_rout_path %>

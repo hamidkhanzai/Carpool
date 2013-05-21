@@ -22,7 +22,7 @@
       <td>&nbsp;</td>
       <td><%= rout.from %></td>
       <td><%= rout.to%></td>
-      <td><%= rout.price %></td>
+      <td><%= number_to_currency(rout.price, :unit => "Afg;", :format => "%n %u") %></td>
 
       <td><%= rout.date %></td>
       <td><%= rout.description %></td>
