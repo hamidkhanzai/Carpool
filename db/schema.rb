@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130521134045) do
+ActiveRecord::Schema.define(:version => 20130521150314) do
 
   create_table "routs", :force => true do |t|
     t.string   "from"
