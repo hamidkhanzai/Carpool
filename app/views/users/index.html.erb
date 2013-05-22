@@ -20,24 +20,24 @@
 
         <tr>
           <td>&nbsp;</td>
-          <td><%= @users.first_name %></td>
-          <td><%= @users.last_name%></td>
-          <td><%= @users.username %></td>
+          <td><%= @user.first_name %></td>
+          <td><%= @user.last_name%></td>
+          <td><%= @user.username %></td>
 
-          <td><%= @users.email %></td>
-          <td><%= @users.nid_no %></td>
-          <td><%= @users.licence_no %></td>
+          <td><%= @user.email %></td>
+          <td><%= @user.nid_no %></td>
+          <td><%= @user.licence_no %></td>
 
 
-          <td><%= link_to("Edit General Information",{:action => "edit", :id=> @users.id},:class => "action edit") %></td>
+          <td><%= link_to("Edit General Information",{:action => "edit", :id=> @user.id},:class => "action edit") %></td>
           <td> <%= link_to 'Change Password', edit_user_registration_path %></td>
 
-          <td><%= link_to("Delete",{:action=>'destroy',:id=> @users.id},:confirm=> "Are You Sour you Want to Delete This Record?", :method => :delete, :class => "action edit") %></td>
+          <td><%= link_to("Delete",{:action=>'destroy',:id=> @user.id},:confirm=> "Are You Sour you Want to Delete This Record?", :method => :delete, :class => "action edit") %></td>
 
 
         </tr>
   </table>
-  <% if @users.Admin?%>
+  <% if @user.Admin?%>
   <%= link_to 'Create New User', new_user_path %>
   <% end %>
 </div>

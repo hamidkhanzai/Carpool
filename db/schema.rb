@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130520132811) do
+ActiveRecord::Schema.define(:version => 20130521143138) do
+
+  create_table "cars", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "number_plate"
+    t.integer  "model"
+    t.string   "company"
+    t.integer  "no_passengers"
+    t.string   "others"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
 
   create_table "routs", :force => true do |t|
     t.string   "from"
@@ -27,17 +42,10 @@ ActiveRecord::Schema.define(:version => 20130520132811) do
 
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
 
-  create_table "user_types", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 40
     t.string   "last_name",              :limit => 40
     t.string   "username",               :limit => 30
-    t.string   "password",               :limit => 100
     t.string   "email",                  :limit => 50
     t.string   "phone",                  :limit => 15
     t.integer  "nid_no"
