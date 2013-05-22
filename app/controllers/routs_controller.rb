@@ -1,7 +1,11 @@
 class RoutsController < ApplicationController
   # GET /routs
   # GET /routs.json
-  before_filter :authenticate_user!
+ 
+ before_filter :authenticate_user!, :except=>[:show,:index] 
+  #@routs = Rout.page(params[:page]).per(5)
+  
+  #render  'index'
   def index
     @routs = Rout.all
 
@@ -24,14 +28,19 @@ class RoutsController < ApplicationController
 
   # GET /routs/new
   # GET /routs/new.json
+  
   def new
+   
     @rout = Rout.new
 
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @rout }
+    
+    
+     end
     end
-  end
+
 
   # GET /routs/1/edit
   def edit

@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+
 ActiveRecord::Schema.define(:version => 20130521143138) do
 
   create_table "cars", :force => true do |t|
@@ -28,6 +29,9 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
     t.datetime "photo_updated_at"
   end
 
+ActiveRecord::Schema.define(:version => 20130521150314) do
+
+
   create_table "routs", :force => true do |t|
     t.string   "from"
     t.string   "to"
@@ -38,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
     t.integer  "free_seats"
     t.string   "price"
     t.date     "date"
+    t.time     "travel_t"
   end
 
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
