@@ -5,8 +5,12 @@ Carpool::Application.routes.draw do
   devise_for :routs
   resources :search
   resources  :routs
+
   get "routs/search"
   post "search/list"
+
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

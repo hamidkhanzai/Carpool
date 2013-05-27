@@ -1,8 +1,4 @@
-
-<%= form_tag({:action=>'list'},:method => "post", :class => "") do %>
-
-
-
+<%= form_tag( routs_path,:method => "get", :class => "") do %>
 
     <div>
       <table  >
@@ -23,10 +19,9 @@
 
           </tr>
         <tr>
-          <td colspan="2"><%= submit_tag "Search",:name=>nil %></td>
+          <td colspan="2"><%= submit_tag "Search" %></td>
         </tr>
           </table>
         </div>
  <% end %>
- 
  
