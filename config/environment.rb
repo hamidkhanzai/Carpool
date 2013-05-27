@@ -13,3 +13,4 @@ ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
 end
 
 
+config.gem "searchlogic"

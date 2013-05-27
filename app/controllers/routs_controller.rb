@@ -6,13 +6,19 @@ class RoutsController < ApplicationController
   #@routs = Rout.page(params[:page]).per(5)
   
   #render  'index'
-  def index
-    @routs = Rout.all
+  
+  
+    def index
+     
+    @routs = Rout.search(params[:d_from],[:d_to],[:travel_date])
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @routs }
     end
+  end
+  def search
+    
   end
  
   # GET /routs/1

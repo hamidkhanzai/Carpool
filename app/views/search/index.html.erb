@@ -4,11 +4,11 @@
       <table  >
         <tr>
           <td><%= label_tag "from"%></td>
-          <td><%= select_tag :from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
+          <td><%= text_field_tag :d_from,  params[:d_from]%> </td>
         </tr>
         <tr>
           <td> <%= label_tag "Distanation"%></td>
-          <td><%= select_tag :to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+          <td><%= text_field_tag :d_to,  params[:d_to] %></td>
         </tr>
         <tr class="controls">
           <td><%= label_tag "Date" %></td>
@@ -25,4 +25,51 @@
         </div>
  <% end %>
  
+<div class="table">
+	
+
+	
+  <h2>Routs Defined</h2>
+  <table summary="users list" class="table table-striped">
+    <tr class="success">
+      <th>&nbsp;</th>
+      <th>Frome</th>
+      <th>Destanition</th>
+      <th>Price</th>
+
+      <th>Travel Date</th>
+      <th>Travel Time</th>
+      
+      
+     
+      <th colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</th>
+    </tr>
+
+
+
+
+    <%@routs.each do |rout| %>
+    <tr>
+      <td>&nbsp;</td>
+      <td><%= rout.d_from %></td>
+      <td><%= rout.d_to%></td>
+      <td><%= number_to_currency(rout.price, :unit => "Afg;", :format => "%n %u") %></td>
+
+      <td><%= rout.travel_date %></td>
+      <td><%= rout.travel_t %></td>
+     
+      <td><%= link_to 'Show', routs_url %></td>
+    
+      
  
+    </tr>
+
+    <% end %>
+    
+  </table>
+  
+  <%= link_to 'Create New rout', new_rout_path %>|
+   
+   
+
+</div>

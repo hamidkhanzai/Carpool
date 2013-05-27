@@ -4,4 +4,16 @@ class Rout < ActiveRecord::Base
    validates :travel_t, :format => {:with => /^\(?(\d{2})\)?[: ]?(\d{2})$/}, :on => :update
   belongs_to :user
   belongs_to :car
+
+  def self.search(search,search1,travel_date)
+  if search
+    find(:all, :conditions => ['d_from LIKE ? OR d_to LIKE ? OR d_to LIKE ? ', search, search1,travel_date])
+  else
+     scoped 
+  end
 end
+end
+  
+     
+        
+   

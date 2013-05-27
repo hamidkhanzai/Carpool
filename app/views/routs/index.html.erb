@@ -1,4 +1,30 @@
+<%= form_tag( routs_path,:method => "get", :class => "") do %>
 
+    <div>
+      <table  >
+        <tr>
+          <td><%= label_tag "from"%></td>
+          <td><%= text_field_tag :d_from,  params[:d_from]%> </td>
+        </tr>
+        <tr>
+          <td> <%= label_tag "Distanation"%></td>
+          <td><%= text_field_tag :d_to,  params[:d_to] %></td>
+        </tr>
+        <tr class="controls">
+          <td><%= label_tag "Date" %></td>
+     <td>   <%=   date_select("show", "date", :default => Date.today,
+          :order => [:month, :day, :year], :start_year => Date.today.year,
+          :end_year => Date.today.year + 3)    %>  </td>
+
+
+          </tr>
+        <tr>
+          <td colspan="2"><%= submit_tag "Search" %></td>
+        </tr>
+          </table>
+        </div>
+ <% end %>
+ 
 <div class="table">
 	
 
@@ -33,9 +59,7 @@
       <td><%= rout.travel_t %></td>
      
       <td><%= link_to 'Show', rout %></td>
-    <td><%= link_to 'Edit', edit_rout_path(rout) %></td>
-     <td><%= link_to 'Destroy', rout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      
+    
  
     </tr>
 
@@ -44,7 +68,6 @@
   </table>
   
   <%= link_to 'Create New rout', new_rout_path %>|
-   <%= link_to 'search for rout', new_rout_path %>
+  
    
-
 </div>
