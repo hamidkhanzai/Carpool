@@ -8,11 +8,15 @@
       <table  >
         <tr>
           <td><%= label_tag "from"%></td>
-          <td><%= select_tag :from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
+          <td><%= select_tag :d_form, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
         </tr>
         <tr>
           <td> <%= label_tag "Distanation"%></td>
-          <td><%= select_tag :to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+          <td><%= select_tag :d_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+        </tr>
+        <tr>
+          <td><%= label_tag "Time"%></td>
+          <td><%= text_field_tag :travel_t %> </td>
         </tr>
         <tr class="controls">
           <td><%= label_tag "Date" %></td>

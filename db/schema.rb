@@ -11,20 +11,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130520132811) do
+ActiveRecord::Schema.define(:version => 20130521143138) do
 
-  create_table "routs", :force => true do |t|
-    t.string   "from"
-    t.string   "to"
-    t.integer  "userId"
-    t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.integer  "free_seats"
-    t.string   "price"
-    t.date     "date"
+  create_table "cars", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "number_plate"
+    t.integer  "model"
+    t.string   "company"
+    t.integer  "no_passengers"
+    t.string   "others"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
+  create_table "routs", :force => true do |t|
+    t.string   "d_from"
+    t.string   "d_to"
+    t.integer  "userId"
+    t.integer  "car_id"
+    t.text     "description"
+    t.integer  "free_seats"
+    t.string   "price"
+    t.date     "travel_date"
+    t.string   "travel_t"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "routs", ["car_id"], :name => "index_routs_on_car_id"
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
 
   create_table "users", :force => true do |t|
