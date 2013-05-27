@@ -11,8 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-
-ActiveRecord::Schema.define(:version => 20130521143138) do
+ActiveRecord::Schema.define(:version => 20130521150314) do
 
   create_table "cars", :force => true do |t|
     t.integer  "user_id"
@@ -29,9 +28,6 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
     t.datetime "photo_updated_at"
   end
 
-ActiveRecord::Schema.define(:version => 20130521150314) do
-
-
   create_table "routs", :force => true do |t|
     t.string   "from"
     t.string   "to"
@@ -47,10 +43,17 @@ ActiveRecord::Schema.define(:version => 20130521150314) do
 
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
 
+  create_table "user_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 40
     t.string   "last_name",              :limit => 40
     t.string   "username",               :limit => 30
+    t.string   "password",               :limit => 100
     t.string   "email",                  :limit => 50
     t.string   "phone",                  :limit => 15
     t.integer  "nid_no"
@@ -74,5 +77,4 @@ ActiveRecord::Schema.define(:version => 20130521150314) do
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
   add_index "users", ["username"], :name => "index_users_on_username"
 
-end 
 end
