@@ -5,7 +5,7 @@
     <ignored path="carpool.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/20130505145813_create_users.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1367875389912" ignored="false" />
-    <file path="/index.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1369683024128" ignored="false" />
+    <file path="/index.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1369686548523" ignored="false" />
     <file path="/routes.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1369669190150" ignored="false" />
     <file path="/users_controller.rb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1369141562354" ignored="false" />
     <file path="/_form.html.erb" changelist="6f38ae4e-3bce-42b2-a342-b5f44a5fe358" time="1369674483691" ignored="false" />
@@ -123,7 +123,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="588" selection-end="588" vertical-scroll-proportion="0.2685185">
+            <state line="18" column="48" selection-start="601" selection-end="604" vertical-scroll-proportion="0.2685185">
               <folding />
             </state>
           </provider>
@@ -1052,7 +1052,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="588" selection-end="588" vertical-scroll-proportion="0.2685185">
+        <state line="18" column="48" selection-start="601" selection-end="604" vertical-scroll-proportion="0.2685185">
           <folding />
         </state>
       </provider>
