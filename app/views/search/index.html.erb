@@ -1,0 +1,28 @@
+<%= form_tag( routs_path,:method => "get", :class => "") do %>
+
+    <div>
+      <table  >
+        <tr>
+          <td><%= label_tag "from"%></td>
+          <td><%= select_tag :from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
+        </tr>
+        <tr>
+          <td> <%= label_tag "Distanation"%></td>
+          <td><%= select_tag :to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+        </tr>
+        <tr class="controls">
+          <td><%= label_tag "Date" %></td>
+     <td>   <%=   date_select("show", "date", :default => Date.today,
+          :order => [:month, :day, :year], :start_year => Date.today.year,
+          :end_year => Date.today.year + 3)    %>  </td>
+
+
+          </tr>
+        <tr>
+          <td colspan="2"><%= submit_tag "Search" %></td>
+        </tr>
+          </table>
+        </div>
+ <% end %>
+ 
+ 

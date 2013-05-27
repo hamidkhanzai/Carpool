@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130521150314) do
+ActiveRecord::Schema.define(:version => 20130521143138) do
 
   create_table "cars", :force => true do |t|
     t.integer  "user_id"
@@ -29,18 +29,20 @@ ActiveRecord::Schema.define(:version => 20130521150314) do
   end
 
   create_table "routs", :force => true do |t|
-    t.string   "from"
-    t.string   "to"
+    t.string   "d_from"
+    t.string   "d_to"
     t.integer  "userId"
+    t.integer  "car_id"
     t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
     t.integer  "free_seats"
     t.string   "price"
-    t.date     "date"
-    t.time     "travel_t"
+    t.date     "travel_date"
+    t.string   "travel_t"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
+  add_index "routs", ["car_id"], :name => "index_routs_on_car_id"
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
 
   create_table "user_types", :force => true do |t|
