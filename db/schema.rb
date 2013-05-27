@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
   end
-
+ end
 ActiveRecord::Schema.define(:version => 20130521150314) do
 
 
