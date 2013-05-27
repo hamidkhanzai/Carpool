@@ -4,7 +4,11 @@ class RoutsController < ApplicationController
  
  before_filter :authenticate_user!, :except=>[:show,:index] 
   #@routs = Rout.page(params[:page]).per(5)
-  
+  #rander 'search'
+ 
+  def search
+    
+  end
   #render  'index'
   def index
     @routs = Rout.all
@@ -14,7 +18,7 @@ class RoutsController < ApplicationController
       format.json { render json: @routs }
     end
   end
-
+ 
   # GET /routs/1
   # GET /routs/1.json
   def show

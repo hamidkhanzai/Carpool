@@ -1,4 +1,7 @@
+
 <div class="table">
+	
+
 	
   <h2>Routs Defined</h2>
   <table summary="users list" class="table table-striped">
@@ -19,7 +22,6 @@
 
 
 
-
     <%@routs.each do |rout| %>
     <tr>
       <td>&nbsp;</td>
@@ -32,17 +34,17 @@
      
       <td><%= link_to 'Show', rout %></td>
     <td><%= link_to 'Edit', edit_rout_path(rout) %></td>
-    <td><%= link_to 'Destroy', rout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+     <td><%= link_to 'Destroy', rout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       
-
-
-      
+ 
     </tr>
 
     <% end %>
     
   </table>
   
-  <%= link_to 'Create New rout', new_rout_path %>
+  <%= link_to 'Create New rout', new_rout_path %>|
+   <%= link_to 'search for rout', new_rout_path %>
+   
 
 </div>
