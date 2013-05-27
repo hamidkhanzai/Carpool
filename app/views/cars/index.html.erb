@@ -1,0 +1,44 @@
+<div class="table">
+  <h2>User Cars</h2>
+  <table summary="users list" class="table table-striped">
+    <tr class="success">
+      <th>&nbsp;</th>
+      <th>Number Plate</th>
+      <th>Model</th>
+      <th>Company</th>
+
+      <th>Number Passengers</th>
+      <th>Description</th>
+
+      <th colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</th>
+    </tr>
+
+
+
+
+
+    <% @cars.each do |car| %>
+        <tr>
+          <td>&nbsp;</td>
+          <td><%= car.number_plate %></td>
+          <td><%= car.model%></td>
+          <td><%= car.company %></td>
+
+          <td><%= car.no_passengers %></td>
+          <td><%= car.others %></td>
+          <td><%= link_to 'Show', car %></td>
+          <td><%= link_to 'Edit', edit_car_path(car) %></td>
+          <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+
+
+        </tr>
+
+    <% end %>
+
+  </table>
+
+  <%= link_to 'Register New Car', new_car_path %>
+
+  </div>

@@ -1,0 +1,47 @@
+<%= form_for(@car,:html=> {:multipart =>true}) do |f| %>
+    <div style="float: right; height: 200px; width:200px; border: 2px solid #000000; margin-right: 300px ">
+      <% if @car!=nil %>
+        <%= image_tag @car.photo.url %>
+      <% end %>
+    </div>
+    <div >
+      <table  >
+        <tr>
+          <%=f.hidden_field :user_id%>
+          <td><%= f.label "Number Plate",:class=>"label label-info"%></td>
+          <td><%= f.text_field :number_plate%> </td>
+        </tr>
+        <tr>
+          <td> <%= f.label :Model, :class=>"label label-info"%></td>
+          <td><%= f.number_field :model %></td>
+        </tr>
+        <tr class="controls">
+
+          <td><%= f.label :"Company",:class=>"label label-info" %><br /></td>
+          <td><%= f.text_field :company, :class=>"inputInfo" %></td>
+
+        </tr>
+        <tr>
+          <td><%= f.label "No Passangers",:class=>"label label-info" %></td>
+          <td><%= f.number_field :no_passengers %></td>
+        </tr>
+
+
+        <tr>
+          <td><%= f.label :photo ,:class=>"label label-info"%><br /></td>
+          <td><%= f.file_field :photo %>        </td>
+        </tr>
+        <tr>
+          <td><%= f.label :Descriptions ,:class=>"label label-info"%><br /></td>
+          <td><%= f.text_area :others %>        </td>
+        </tr>
+
+
+        <tr >
+          <td colspan="2">&nbsp;&nbsp;&nbsp;<%= f.submit :class=>"btn btn-primary" %></td>
+        </tr>
+      </table>
+
+    </div>
+<% end %>
+

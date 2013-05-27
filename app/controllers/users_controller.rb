@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
+
   def index
     if current_user.Admin?
       @users= User.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
      render  'list'
     else
-      @users=User.find(current_user.id)
+      @user=User.find(current_user.id)
     end
 
 
@@ -44,9 +45,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def delete
 
-  end
   def destroy
     @user=User.find(params[:id])
     @user.destroy
