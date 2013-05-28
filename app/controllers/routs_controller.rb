@@ -10,6 +10,7 @@ class RoutsController < ApplicationController
   
     def index
      
+     
     @routs = Rout.search(params[:d_from],[:d_to],[:travel_date])
 
     respond_to do |format|
@@ -38,7 +39,7 @@ class RoutsController < ApplicationController
   def new
    
     @rout = Rout.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @rout }

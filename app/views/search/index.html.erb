@@ -1,14 +1,22 @@
-<%= form_tag( routs_path,:method => "get", :class => "") do %>
+
+<%= form_tag({:action=>'list'},:method => "post", :class => "") do %>
+
+
+
 
     <div>
       <table  >
         <tr>
           <td><%= label_tag "from"%></td>
-          <td><%= text_field_tag :d_from,  params[:d_from]%> </td>
+          <td><%= select_tag :d_form, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
         </tr>
         <tr>
           <td> <%= label_tag "Distanation"%></td>
-          <td><%= text_field_tag :d_to,  params[:d_to] %></td>
+          <td><%= select_tag :d_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+        </tr>
+        <tr>
+          <td><%= label_tag "Time"%></td>
+          <td><%= text_field_tag 'travel_t', nil, :placeholder => 'example 12:00' %> </td>
         </tr>
         <tr class="controls">
           <td><%= label_tag "Date" %></td>
@@ -19,57 +27,9 @@
 
           </tr>
         <tr>
-          <td colspan="2"><%= submit_tag "Search" %></td>
+          <td colspan="2"><%= submit_tag "Search",:name=>nil %></td>
         </tr>
           </table>
         </div>
  <% end %>
  
-<div class="table">
-	
-
-	
-  <h2>Routs Defined</h2>
-  <table summary="users list" class="table table-striped">
-    <tr class="success">
-      <th>&nbsp;</th>
-      <th>Frome</th>
-      <th>Destanition</th>
-      <th>Price</th>
-
-      <th>Travel Date</th>
-      <th>Travel Time</th>
-      
-      
-     
-      <th colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</th>
-    </tr>
-
-
-
-
-    <%@routs.each do |rout| %>
-    <tr>
-      <td>&nbsp;</td>
-      <td><%= rout.d_from %></td>
-      <td><%= rout.d_to%></td>
-      <td><%= number_to_currency(rout.price, :unit => "Afg;", :format => "%n %u") %></td>
-
-      <td><%= rout.travel_date %></td>
-      <td><%= rout.travel_t %></td>
-     
-      <td><%= link_to 'Show', routs_url %></td>
-    
-      
- 
-    </tr>
-
-    <% end %>
-    
-  </table>
-  
-  <%= link_to 'Create New rout', new_rout_path %>|
-   
-   
-
-</div>

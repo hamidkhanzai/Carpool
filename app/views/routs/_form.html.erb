@@ -31,13 +31,19 @@
       <td><%= f.label  :travel_time ,:class=>"label label-info"%><br /></td>
       <td><%= f.text_field :travel_t, :value => "Enter time format as(hh:mm)"%>        </td>
     </tr>
-    
+    <tr>
+      <td><%= f.label  :Car_Name ,:class=>"label label-info"%><br /></td>
+      <td><%= select_tag :car_id, @cars, {:default => 'Show All'} %>      </td>
+    </tr>
     <tr>
       <td><%= f.label :Descriptions ,:class=>"label label-info"%><br /></td>
       <td><%= f.text_area :description %>        </td>
     </tr>
-        
-
+      <tr>
+       <td><%= f.hidden_field :userId, :value => current_user.id %>        </td>
+    </tr>      
+     
+    
     <tr >
       <td colspan="2">&nbsp;&nbsp;&nbsp;<%= f.submit :class=>"btn btn-primary" %></td>
     </tr>
