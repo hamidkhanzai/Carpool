@@ -8,7 +8,7 @@
       <table  >
         <tr>
           <td><%= label_tag "from"%></td>
-          <td><%= select_tag :d_form, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
+          <td><%= select_tag :d_from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
         </tr>
         <tr>
           <td> <%= label_tag "Distanation"%></td>
@@ -20,9 +20,7 @@
         </tr>
         <tr class="controls">
           <td><%= label_tag "Date" %></td>
-     <td>   <%=   date_select("show", "date", :default => Date.today,
-          :order => [:month, :day, :year], :start_year => Date.today.year,
-          :end_year => Date.today.year + 3)    %>  </td>
+     <td>   <%=   date_select("travel_date",'' )    %>  </td>
 
 
           </tr>

@@ -25,11 +25,11 @@
     <%@routs.each do |rout| %>
         <tr>
           <td>&nbsp;</td>
-          <td><%= rout.from %></td>
-          <td><%= rout.to%></td>
+          <td><%= rout.d_from %></td>
+          <td><%= rout.d_to%></td>
           <td><%= number_to_currency(rout.price, :unit => "Afg;", :format => "%n %u") %></td>
 
-          <td><%= rout.date %></td>
+          <td><%= rout.travel_date %></td>
           <td><%= rout.travel_t %></td>
 
           <td><%= link_to 'Show', rout %></td>
