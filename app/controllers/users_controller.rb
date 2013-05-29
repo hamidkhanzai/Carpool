@@ -37,6 +37,7 @@ class UsersController < ApplicationController
   end
 
   def update
+
     @user=User.find(params[:id])
     if @user.update_attributes(params[:user])
       redirect_to(:action => "index")
@@ -51,11 +52,16 @@ class UsersController < ApplicationController
     @user.destroy
     redirect_to(:action=>'index')
   end
-  def show
-    admin
-  end
+
 
   def admin
-    render :text=>"and this is theat " + params[:id] + "this is it "
+    @user=User.find(params[:id])
+    if @user.update_attribute(:Admin,'true')
+
+      flash[:notice] = "User successfully Promoted to Admin"
+    else
+      flash[:alert]= "Could not promote user to Admin"
+    end
+    index
   end
 end

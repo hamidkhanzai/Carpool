@@ -2,7 +2,9 @@ Carpool::Application.routes.draw do
   devise_for :users
   resources :cars
   resources  :users
-  get 'users/admin'
+
+
+  match "/users/admin/:id" => "users#admin"
   devise_for :routs
   resources :search
   resources  :routs
