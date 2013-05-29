@@ -51,4 +51,11 @@ class UsersController < ApplicationController
     @user.destroy
     redirect_to(:action=>'index')
   end
+  def show
+    admin
+  end
+
+  def admin
+    render :text=>"and this is theat " + params[:id] + "this is it "
+  end
 end

@@ -2,12 +2,14 @@ Carpool::Application.routes.draw do
   devise_for :users
   resources :cars
   resources  :users
+  get 'users/admin'
   devise_for :routs
   resources :search
   resources  :routs
 
   get "routs/search"
   post "search/list"
+
 
   
 

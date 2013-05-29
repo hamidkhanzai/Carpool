@@ -29,17 +29,22 @@
           <td><%= @user.licence_no %></td>
 
 
-          <td><%= link_to("Edit General Information",{:action => "edit", :id=> @user.id},:class => "action edit") %></td>
-          <td> <%= link_to 'Change Password', edit_user_registration_path %></td>
+          <td><div class="btn-group">
+            <button class="btn btn-primary">Action</button>
+            <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown">
+              <span class="caret "></span>
+            </button>
+            <ul class="dropdown-menu">
 
-          <td><%= link_to("Delete",{:action=>'destroy',:id=> @user.id},:confirm=> "Are You Sour you Want to Delete This Record?", :method => :delete, :class => "action edit") %></td>
-
+              <li><%= link_to("Edit General Information",{:action => "edit", :id=> @user.id},:class => "action edit") %></li>
+              <li><%= link_to 'Change Password', edit_user_registration_path %></li>
+              <li><%= link_to("Delete My Account",{:action=>'destroy',:id=> @user.id},:confirm=> "Are You Sour you Want to Delete This Record?", :method => :delete, :class => "action edit") %></li>
+            </ul>
+          </div></td>
 
         </tr>
   </table>
 
-  <% if @user.Admin?%>
-  <%= link_to 'Create New User', new_user_path %>
-  <% end %>
+
 
 </div>
