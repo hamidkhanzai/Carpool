@@ -31,10 +31,12 @@
       <td><%= f.label  :travel_time ,:class=>"label label-info"%><br /></td>
       <td><%= f.text_field :travel_t, :placeholder => "Enter time format as(hh:mm)"%>        </td>
     </tr>
+    
     <tr>
-      <td><%= f.label  :Car_Name ,:class=>"label label-info"%><br /></td>
-      <td><%= select_tag :car_id, @cars, {:default => 'Show All'} %>      </td>
+     <td><%= f.label  :Car_Plate_Number ,:class=>"label label-info"%><br /></td>
+      <td><%= collection_select(:post, :car_id, Car.all, :id,:number_plate ) %>      </td>
     </tr>
+    
     <tr>
       <td><%= f.label :Descriptions ,:class=>"label label-info"%><br /></td>
       <td><%= f.text_area :description %>        </td>

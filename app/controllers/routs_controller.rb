@@ -11,8 +11,8 @@ class RoutsController < ApplicationController
     def index
      
      
-    @routs = Rout.search(params[:d_from],[:d_to],[:travel_date])
-
+    #@routs = Rout
+    @routs = Rout.paginate(:page => params[:page], :per_page => 5).order("created_at DESC").search(params[:d_from],[:d_to],[:travel_date])
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @routs }
@@ -25,7 +25,8 @@ class RoutsController < ApplicationController
   # GET /routs/1
   # GET /routs/1.json
   def show
-    @rout = Rout.find(params[:id])
+   # @rout = Rout.find(params[:id])
+    @rout = Rout.find(params[:id],:include => :user, :joins => "INNER JOIN users ON routs.userId = users.id")
 
     respond_to do |format|
       format.html # show.html.erb
@@ -37,8 +38,9 @@ class RoutsController < ApplicationController
   # GET /routs/new.json
   
   def new
-   
+    @cars =Car.all
     @rout = Rout.new
+   
     
     respond_to do |format|
       format.html # new.html.erb
