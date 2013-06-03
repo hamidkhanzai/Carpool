@@ -26,9 +26,26 @@
 
           <td><%= car.no_passengers %></td>
           <td><%= car.others %></td>
-          <td><%= link_to 'Show', car %></td>
-          <td><%= link_to 'Edit', edit_car_path(car) %></td>
-          <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td>
+          <div class="btn-group">
+            <button class="btn btn-primary">Action</button>
+            <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown">
+              <span class="caret "></span>
+            </button>
+            <ul class="dropdown-menu">
+
+              <li> <%= link_to 'Edit', edit_car_path(car) %></li>
+              <li><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+              <li class="divider"></li>
+              <li><%= link_to("Register New Car", new_car_path)%></li>
+              <li><%= link_to 'Show', car %></li>
+            </ul>
+          </div>
+
+
+
+
+          </td>
 
 
 

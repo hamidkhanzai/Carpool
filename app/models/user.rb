@@ -19,6 +19,7 @@ class User < ActiveRecord::Base
 
    has_many :routs
 
+
   #require 'digest/sha1'
 =begin
    if email==nil?

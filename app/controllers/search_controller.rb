@@ -1,8 +1,9 @@
 class SearchController < ApplicationController
 
+
+
   def index
-    
-   @routs = Rout.search(params[:d_from],[:d_to],[:tarvel_date])
+    @routs = Rout.search(params[:d_from],[:d_to],[:tarvel_date])
   
   
   end

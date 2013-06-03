@@ -4,5 +4,13 @@ class Car < ActiveRecord::Base
   belongs_to :user
   has_many :routs
   has_attached_file :photo
+
   has_many :report
+
+  validates_uniqueness_of :number_plate
+
+
+
+
+
 end
