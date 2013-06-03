@@ -1,7 +1,12 @@
 class CarsController < ApplicationController
 
  def index
+      if current_user.Admin?
       @cars=Car.all
+      else
+        @cars=Car.where(:user_id => current_user.id)
+      end
+
  end
 
  def new

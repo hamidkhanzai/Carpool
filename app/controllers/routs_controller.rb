@@ -38,7 +38,7 @@ class RoutsController < ApplicationController
   # GET /routs/new.json
   
   def new
-    @cars =Car.all
+    @cars =Car.where("user_id=?",current_user.id)
     @rout = Rout.new
    
     

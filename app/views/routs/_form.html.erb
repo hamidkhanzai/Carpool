@@ -9,7 +9,7 @@
       <td><%= f.select :d_from,  options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
     </tr>
     <tr>
-     <td> <%= f.label :Distanation,:class=>"label label-info"%></td>
+     <td> <%= f.label :Destination,:class=>"label label-info"%></td>
       <td><%= f.select  :d_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
     </tr>
     <tr class="controls">
@@ -20,7 +20,7 @@
     </tr>
        <tr>
       <td><%= f.label :date,:class=>"label label-info" %></td>
-      <td><%= f.date_select :travel_date %></td>
+      <td><%= f.date_select :travel_date, :prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }   %></td>
     </tr>
     
     <tr>
@@ -31,15 +31,15 @@
       <td><%= f.label  :travel_time ,:class=>"label label-info"%><br /></td>
       <td><%= f.text_field :travel_t, :placeholder => "Enter time format as(hh:mm)"%>        </td>
     </tr>
-    
+
     <tr>
      <td><%= f.label  :Car_Plate_Number ,:class=>"label label-info"%><br /></td>
-      <td><%= collection_select(:post, :car_id, Car.all, :id,:number_plate ) %>      </td>
+      <td><%= collection_select(:post, :car_id, @cars, :id,:number_plate ) %>      </td>
     </tr>
     
     <tr>
       <td><%= f.label :Descriptions ,:class=>"label label-info"%><br /></td>
-      <td><%= f.text_area :description %>        </td>
+      <td ><%= f.text_area :description %>        </td>
     </tr>
       <tr>
        <td><%= f.hidden_field :userId, :value => current_user.id %>        </td>

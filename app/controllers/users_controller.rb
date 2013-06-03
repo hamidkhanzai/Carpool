@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
 
+
   def index
     if current_user.Admin?
       @users= User.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
@@ -8,6 +9,7 @@ class UsersController < ApplicationController
     else
       @user=User.find(current_user.id)
     end
+
 
 
 
