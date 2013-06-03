@@ -20,7 +20,11 @@
     </tr>
        <tr>
       <td><%= f.label :date,:class=>"label label-info" %></td>
+
       <td><%= f.date_select :travel_date, :prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }   %></td>
+
+      <td><%= f.text_field :travel_date %></td>
+
     </tr>
     
     <tr>
