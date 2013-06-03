@@ -1,0 +1,39 @@
+
+<%= form_tag reports_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search], :placeholder => "Enter the name of the drive " %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<table class="table">
+  <tr>
+    <th>Driver name</th>
+    <th>Driver lastname</th>
+    <th>Car number plate</th>
+    <th>Travel date</th>
+    <th>Travel time</th>
+    <th>Report body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reports.each do |report| %>
+  <tr>
+    <td><%= report.driver_name %></td>
+    <td><%= report.driver_lastname %></td>
+    <td><%= report.car_number_plate %></td>
+        <td><%= report.travel_date %></td>
+    <td><%= report.travel_time %></td>
+    <td><%= "can be seen in previews" %></td>
+    <td><%= link_to 'Show', report %></td>
+    <td><%= link_to 'Edit', edit_report_path(report) %></td>
+    <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Report', new_report_path %>

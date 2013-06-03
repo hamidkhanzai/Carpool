@@ -1,4 +1,7 @@
 Carpool::Application.routes.draw do
+  resources :reports
+
+
   devise_for :users
   resources :cars
   resources  :users

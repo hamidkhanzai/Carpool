@@ -8,7 +8,7 @@ gem "paperclip", "~> 3.0"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-
+gem 'calendar_date_select', :git => 'git://github.com/paneq/calendar_date_select.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

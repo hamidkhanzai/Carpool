@@ -28,6 +28,19 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
     t.datetime "photo_updated_at"
   end
 
+  create_table "reports", :force => true do |t|
+    t.string   "driver_name"
+    t.string   "driver_lastname"
+    t.integer  "car_number_plate"
+    t.string   "travel_from"
+    t.string   "travel_to"
+    t.date     "travel_date"
+    t.string   "travel_time"
+    t.text     "report_body"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
   create_table "routs", :force => true do |t|
     t.string   "d_from"
     t.string   "d_to"
@@ -45,10 +58,17 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
   add_index "routs", ["car_id"], :name => "index_routs_on_car_id"
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
 
+  create_table "user_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 40
     t.string   "last_name",              :limit => 40
     t.string   "username",               :limit => 30
+    t.string   "password",               :limit => 100
     t.string   "email",                  :limit => 50
     t.string   "phone",                  :limit => 15
     t.integer  "nid_no"
