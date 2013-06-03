@@ -21,10 +21,8 @@
        <tr>
       <td><%= f.label :date,:class=>"label label-info" %></td>
 
-      <td><%= f.date_select :travel_date, :prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }   %></td>
-
-      <td><%= f.text_field :travel_date %></td>
-
+      <td><%= f.date_select :travel_date,:default=>Date.today,:order=>[:year,:month,:day],  :start_year => Date.today.year,
+                            :end_year => Date.today.year + 3  %></td>
     </tr>
     
     <tr>
