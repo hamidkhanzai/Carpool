@@ -4,6 +4,9 @@ gem 'rails', '3.2.13'
 gem 'will_paginate', '~> 3.0'
 gem 'devise'
 gem "paperclip", "~> 3.0"
+
+
+gem 'jquery-ui-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

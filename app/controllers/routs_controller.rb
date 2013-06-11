@@ -53,7 +53,9 @@ class RoutsController < ApplicationController
 
   # GET /routs/1/edit
   def edit
+    @cars =Car.where("user_id=?",current_user.id)
     @rout = Rout.find(params[:id])
+    @t_date=@rout.travel_date
   end
 
   # POST /routs
