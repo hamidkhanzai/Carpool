@@ -395,11 +395,15 @@ a:focus {
 }
 
 .span4 {
-    width: 300px;
+    width: 350px;
 }
 
 .span3 {
-    width: 220px;
+    width: 400px;
+    height: 300px;
+    float:left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .span2 {
@@ -5765,7 +5769,8 @@ a.badge:focus {
 .label-info,
 .badge-info {
     background-color: #3a87ad;
-    height: 18px;
+    height: 20px;
+    width:120px;
 }
 
 .label-info[href],
@@ -5786,7 +5791,7 @@ a.badge:focus {
 .btn .label,
 .btn .badge {
     position: relative;
-    top: -1px;
+    top: 1px;
 }
 
 .btn-mini .label,

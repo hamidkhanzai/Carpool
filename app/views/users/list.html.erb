@@ -1,3 +1,4 @@
+<div style="height: 450px">
 <div class="table">
   <h2>Users</h2>
   <table summary="users list" class="table table-striped">
@@ -57,7 +58,9 @@
 
     <% end %>
   </table>
+</div>
   <div class="table">
+
     <%= will_paginate @users,:previous_label=>"<<",:next_label=>">>"  %>
   </div>
   <%= link_to 'Create New User', new_user_path %>

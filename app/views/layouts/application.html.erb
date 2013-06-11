@@ -3,6 +3,7 @@
 <head>
   <title>Carpool</title>
   <%= stylesheet_link_tag    "application","main.css", :media => "all" %>
+
   <%= javascript_include_tag "application","main.js" %>
   <%= stylesheet_link_tag("application","datepicker.css") %>
   <script src="/javascripts/jquery.js" type="text/javascript"></script>
@@ -31,7 +32,7 @@
        <!--  <li class="active"><a href="#"><%= favicon_link_tag 'icon-road' %><i class="icon-road"></i> HOME</a></li> -->
           <li><%= link_to("HOME", pages_home_path)%> </li>
      
-        <li><%= link_to 'SEARCH', {:action => 'index'}  %></li>
+        <li><%= link_to 'SEARCH',{:controller=>'search',:action => 'index' }  %></li>
        
         <li><%= link_to("ABOUT US", pages_about_path)%></li>
         
@@ -41,7 +42,6 @@
         <li>    <% if user_signed_in? %>
 
               <%= link_to 'SIGN OUT', destroy_user_session_path, :method => 'delete' %>
-زخ
           <% else %>
               <%= link_to 'SIGN IN', new_user_session_path  %>
               </li>
@@ -84,7 +84,7 @@
 
         </div>
     </div>
-          
+
 
 </div>
 </div>
