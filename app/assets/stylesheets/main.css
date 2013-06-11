@@ -395,12 +395,14 @@ a:focus {
 }
 
 .span4 {
-    width: 350px;
+    width: 400px;
+    float:left;
+     padding-left: 20px;
 }
 
 .span3 {
     width: 400px;
-    height: 300px;
+    
     float:left;
     padding-left: 20px;
     padding-right: 20px;
