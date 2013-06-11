@@ -13,4 +13,5 @@ class SearchController < ApplicationController
     @routs = Rout.where("d_to= ? and d_from= ? and travel_date= ?",params[:d_to],params[:d_from],travel_date).paginate(:page => params[:page], :per_page => 5)
 
   end
+  
 end
