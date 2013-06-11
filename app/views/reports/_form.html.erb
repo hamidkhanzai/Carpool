@@ -1,0 +1,54 @@
+<%= form_for(@report) do |f| %>
+  <% if @report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+      <% @report.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="cont">
+	<div class="field">
+    <%= f.label :driver_name %>
+    <%= f.text_field :driver_name %>
+  </div>
+  <div class="field">
+    <%= f.label :driver_lastname %>
+    <%= f.text_field :driver_lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :car_number_plate %>
+    <td><%= collection_select(:post, :car_number_plate, Car.all, :id,:number_plate ) %>  
+  </div>
+</div>
+<br /> <br /><br />
+  <div class="cont">
+  <div class="field">
+    <%= f.label :travel_from %>
+    <%= f.select  :travel_from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %> 
+  </div>
+  <div class="field">
+    <%= f.label :travel_to %>
+   <%= f.select  :travel_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %> 
+  </div>
+  <div class="field">
+    <%= f.label :travel_time %>
+   <%= f.text_field :travel_time, :placeholder => "Enter time format as(hh:mm)"%> 
+     </div>
+  </div>
+  <br /><br /><br /><br />
+  <div class="date">
+    
+ Travel Date:<br /><%= f.date_select :travel_date %> 
+  <br />
+  <div class="text">
+    <%= f.label :Write_your_report %>
+   <%= f.text_area :report_body , :cols=>1,:rows=>5 %> 
+  </div>
+  <div >
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  driver_name: MyString
+  driver_lastname: MyString
+  car_number_plate: 1
+  travel_from: MyString
+  travel_to: MyString
+  travel_date: 2013-06-03
+  travel_time: MyString
+  report_body: MyText
+
+two:
+  driver_name: MyString
+  driver_lastname: MyString
+  car_number_plate: 1
+  travel_from: MyString
+  travel_to: MyString
+  travel_date: 2013-06-03
+  travel_time: MyString
+  report_body: MyText

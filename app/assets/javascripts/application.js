@@ -30,6 +30,7 @@
  *  ui.datepicker.js
  *  ui.slider.js
  */
+require fullcalendar
 (function($) {
 
 /**
@@ -460,3 +461,4 @@ $.timepicker = new Timepicker();
 $('document').ready(function () {$.timepicker.init();});
 
 })(jQuery);
+

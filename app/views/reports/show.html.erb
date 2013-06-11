@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Driver name:</b>
+  <%= @report.driver_name %>
+</p>
+
+<p>
+  <b>Driver lastname:</b>
+  <%= @report.driver_lastname %>
+</p>
+
+<p>
+  <b>Car number plate:</b>
+  <%= @report.car_number_plate %>
+</p>
+
+<p>
+  <b>Travel from:</b>
+  <%= @report.travel_from %>
+</p>
+
+<p>
+  <b>Travel to:</b>
+  <%= @report.travel_to %>
+</p>
+
+<p>
+  <b>Travel date:</b>
+  <%= @report.travel_date %>
+</p>
+
+<p>
+  <b>Travel time:</b>
+  <%= @report.travel_time %>
+</p>
+
+<p>
+  <b>Report body:</b>
+  <%= @report.report_body %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>
