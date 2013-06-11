@@ -2,7 +2,7 @@ class RoutsController < ApplicationController
   # GET /routs
   # GET /routs.json
  
- before_filter :authenticate_user!, :except=>[:show,:index] 
+ before_filter :authenticate_user!
   #@routs = Rout.page(params[:page]).per(5)
   
   #render  'index'
@@ -11,12 +11,12 @@ class RoutsController < ApplicationController
     def index
      
      
-    #@routs = Rout
-    @routs = Rout.paginate(:page => params[:page], :per_page => 5).order("created_at DESC").search(params[:d_from],[:d_to],[:travel_date])
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @routs }
+    if current_user.Admin?
+    @routs = Rout.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
+    else
+      @routs=Rout.paginate(:page => params[:page], :per_page => 5).where("userid=?",current_user.id).order("created_at DESC")
     end
+
   end
   def search
     
