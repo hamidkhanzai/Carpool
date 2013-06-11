@@ -1,4 +1,4 @@
-
+<div style="height: 400px">
 <div class="table">
 
 
@@ -42,9 +42,12 @@
     <% end %>
 
   </table>
-
+  <% if current_user!=nil %>
   <%= link_to 'Create New rout', new_rout_path %>|
-  <%= link_to 'search for rout', new_search_path %>
+
+   <% end %>
+  <%= link_to 'New Search', {:action => 'index'} %>
+
 
 
 </div>
@@ -52,4 +55,5 @@
 
 <%= will_paginate @routs,:previous_label=>"<<",:next_label=>">>"  %>
 
+</div>
 </div>

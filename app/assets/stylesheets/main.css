@@ -7,6 +7,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
 .pagination {
     padding: 3px;
     margin: 15px;
@@ -879,7 +880,7 @@ h4 small {
 
 ul,
 ol {
-    padding: 0;
+    padding:0;
     margin: 0 0 10px 25px;
 }
 
@@ -1138,7 +1139,7 @@ textarea {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 select,
@@ -1163,7 +1164,7 @@ input[type="color"],
     padding: 4px 6px;
     margin-bottom: 10px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 10px;
     color: #555555;
     vertical-align: middle;
     -webkit-border-radius: 4px;
@@ -4424,7 +4425,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
     *position: relative;
     *z-index: 2;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     overflow: visible;
 }
 
@@ -4961,6 +4962,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .navbar-search .search-query:focus,
 .navbar-inverse .navbar-search .search-query.focused {
+ 
     padding: 5px 15px;
     color: #333333;
     text-shadow: 0 1px 0 #ffffff;
@@ -5483,7 +5485,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .popover-title {
-    padding: 8px 14px;
+    padding:0;
     margin: 0;
     font-size: 14px;
     font-weight: normal;
@@ -6224,4 +6226,13 @@ a.badge:focus {
 
 .affix {
     position: fixed;
+}
+
+.social {
+	padding-left:20px;
+	padding-top:10px;
+	float: right;
+	height: px;
+	width: 300px;
+	position: right;
 }

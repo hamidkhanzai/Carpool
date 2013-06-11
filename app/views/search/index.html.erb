@@ -1,4 +1,4 @@
-
+<div style="height: 400px">
 <%= form_tag({:action=>'list'},:method => "post", :class => "") do %>
 
 
@@ -20,7 +20,7 @@
         </tr>
         <tr class="controls">
           <td><%= label_tag "Date" %></td>
-     <td>   <%=   date_select("travel_date",'' )    %>  </td>
+     <td>   <input type="text" name="travel_date"  data-behaviour='datepicker' ></td>
 
 
           </tr>
@@ -30,4 +30,11 @@
           </table>
         </div>
  <% end %>
- 
+<script type="text/javascript">
+    $('[data-behaviour~=datepicker]').datepicker({
+     dateFormat: 'yy-mm-dd'
+    })
+</script>
+
+
+</div>

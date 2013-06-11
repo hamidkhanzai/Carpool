@@ -13,7 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
- 
+
+//= require jquery.ui.all
 /*!
  * jQuery UI Timepicker 0.2.1
  *

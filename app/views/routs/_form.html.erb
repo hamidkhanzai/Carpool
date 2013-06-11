@@ -21,8 +21,10 @@
        <tr>
       <td><%= f.label :date,:class=>"label label-info" %></td>
 
-      <td><%= f.date_select :travel_date,:default=>Date.today,:order=>[:year,:month,:day],  :start_year => Date.today.year,
-                            :end_year => Date.today.year + 3  %></td>
+
+      <td>
+       <input type="text" value="<%= @t_date %>"  data-behaviour='datepicker' name="travel_date">
+      </td>
 
     </tr>
     
@@ -37,7 +39,7 @@
 
     <tr>
      <td><%= f.label  :Car_Plate_Number ,:class=>"label label-info"%><br /></td>
-      <td><%= collection_select(:post, :car_id, @cars, :id,:number_plate ) %>      </td>
+      <td><%= collection_select(:plate, :car_plate, @cars, :number_plate,:number_plate ) %>      </td>
     </tr>
     
     <tr>
@@ -57,3 +59,8 @@
         </div>
 <% end %>
 
+<script type="text/javascript">
+    $('[data-behaviour~=datepicker]').datepicker({
+        dateFormat: 'yy-mm-dd'
+    })
+</script>
