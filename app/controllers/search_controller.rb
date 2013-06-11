@@ -18,4 +18,5 @@ class SearchController < ApplicationController
   def show
     index
   end
+  
 end

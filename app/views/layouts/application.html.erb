@@ -34,6 +34,8 @@
         <li><%= link_to 'SEARCH', "#"  %></a></li>
         <li><a href="#">ABOUT US</a></li>
         <li><a href="contact.html">CONTACT</a></li>
+        
+         
         <li>    <% if user_signed_in? %>
 
               <%= link_to 'SIGN OUT', destroy_user_session_path, :method => 'delete' %>
@@ -44,7 +46,7 @@
               <li>
               <%= link_to 'SIGN UP',  new_user_registration_path  %>
           <% end %></li>
-
+	<li><div class="social"><a href="https://www.facebook.com/groups/501464039927455/"><%=image_tag("facebook.png")  %></a>&nbsp&nbsp<a href="#"><%=image_tag("twitter.png")  %></a>&nbsp&nbsp<a href="#"><%=image_tag("myspace.png")  %></a>&nbsp&nbsp<a href="#"><%=image_tag("digg.png")  %></a></div></li>
       </ul>
 
 
