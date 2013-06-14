@@ -14,8 +14,9 @@ Carpool::Application.routes.draw do
 
   get "routs/search"
   post "search/list"
-
-
+  get("pages/home")
+  get("pages/about")
+  get("pages/contact")
   
 
   # The priority is based upon order of creation:

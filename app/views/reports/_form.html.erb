@@ -1,54 +1,63 @@
-<%= form_for(@report) do |f| %>
-  <% if @report.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
 
-      <ul>
-      <% @report.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-<div class="cont">
-	<div class="field">
-    <%= f.label :driver_name %>
-    <%= f.text_field :driver_name %>
-  </div>
-  <div class="field">
-    <%= f.label :driver_lastname %>
-    <%= f.text_field :driver_lastname %>
-  </div>
-  <div class="field">
-    <%= f.label :car_number_plate %>
-    <td><%= collection_select(:post, :car_number_plate, Car.all, :id,:number_plate ) %>  
-  </div>
-</div>
-<br /> <br /><br />
-  <div class="cont">
-  <div class="field">
-    <%= f.label :travel_from %>
-    <%= f.select  :travel_from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %> 
-  </div>
-  <div class="field">
-    <%= f.label :travel_to %>
-   <%= f.select  :travel_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %> 
-  </div>
-  <div class="field">
-    <%= f.label :travel_time %>
-   <%= f.text_field :travel_time, :placeholder => "Enter time format as(hh:mm)"%> 
-     </div>
-  </div>
-  <br /><br /><br /><br />
-  <div class="date">
+<%= form_for(@report,{:class=>"form-horizontal"}) do |f| %>
+
+  <div>
+      <table calss='table' >    	
     
- Travel Date:<br /><%= f.date_select :travel_date %> 
-  <br />
-  <div class="text">
-    <%= f.label :Write_your_report %>
-   <%= f.text_area :report_body , :cols=>1,:rows=>5 %> 
-  </div>
-  <div >
-    <%= f.submit %>
-  </div>
+    <tr>
+      <td><%= f.label :driver_name,:class=>"label label-info"%></td>
+      <td><%= f.text_field :driver_name %> </td>
+    </tr>
+     <tr>
+      <td><%= f.label :driver_lastname,:class=>"label label-info"%></td>
+      <td> <%= f.text_field :driver_lastname %> </td>
+    </tr>
+    <tr>
+      <td><%= f.label :travel_from,:class=>"label label-info"%></td>
+      <td><%= f.select :travel_from,  options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
+    </tr>
+    <tr>
+     <td> <%= f.label :travel_to,:class=>"label label-info"%></td>
+      <td><%= f.select  :travel_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+    </tr>
+    <tr>    
+
+      <td><%= f.label :car_number_plate, :class=>"label label-info" %><br /></td>
+      <td><%= collection_select(:post, :car_number_plate, Car.all, :id,:number_plate ) %> </td>
+
+    </tr>
+       <tr>
+      <td><%= f.label :date,:class=>"label label-info" %></td>
+
+
+      <td>
+       <input type="text" value="<%= @t_date %>"  data-behaviour='datepicker' name="travel_date">
+      </td>
+
+    </tr>
+    <tr>
+      <td><%= f.label  :travel_time ,:class=>"label label-info"%><br /></td>
+      <td><%= f.text_field :travel_time, :placeholder => "Enter time format as(hh:mm)"%>        </td>
+    </tr>
+      <tr>
+      <td><%= f.label :Write_your_report ,:class=>"label label-info"%><br /></td>
+      <td ><%= f.text_area :report_body , :cols=>1,:rows=>5 %>        </td>
+    </tr>
+      
+     
+    
+    <tr >
+      <td colspan="2">&nbsp;&nbsp;&nbsp;<%= f.submit :class=>"btn btn-primary" %></td>
+    </tr>
+      </table>
+
+        </div>
 <% end %>
+
+<script type="text/javascript">
+    $('[data-behaviour~=datepicker]').datepicker({
+        dateFormat: 'yy-mm-dd'
+    })
+</script>
+
+

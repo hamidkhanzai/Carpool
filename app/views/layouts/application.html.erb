@@ -26,6 +26,7 @@
 
       <!-- Menu of the page -->
 
+
       <a class="brand" href="#"><span style="color:red;  ">CARPOOL</span><span style="color: green">AFGHANISTAN</span></a>
 
       <ul class="nav">
@@ -34,12 +35,24 @@
         <li><%= link_to 'SEARCH', "#"  %></a></li>
         <li><a href="#">ABOUT US</a></li>
         <li><a href="contact.html">CONTACT</a></li>
+
+     <a class="brand" href="#"><span style="color:red; background-image: url( '<%= asset_path 'flag.png' %>') ">CARPOOL</span><span style="color: green">AFGHANISTAN</span></a>
+
+      <ul class="nav">
+       <!--  <li class="active"><a href="#"><%= favicon_link_tag 'icon-road' %><i class="icon-road"></i> HOME</a></li> -->
+          <li><%= link_to("HOME", pages_home_path)%> </li>
+     
+        <li><%= link_to 'SEARCH',{:controller=>'search',:action => 'index' }  %></li>
+       
+        <li><%= link_to("ABOUT US", pages_about_path)%></li>
+        
+        <li><%= link_to("CONTACT", pages_contact_path)%></li>
+
         
          
         <li>    <% if user_signed_in? %>
 
               <%= link_to 'SIGN OUT', destroy_user_session_path, :method => 'delete' %>
-
           <% else %>
               <%= link_to 'SIGN IN', new_user_session_path  %>
               </li>
@@ -82,20 +95,7 @@
 
         </div>
     </div>
-          <!-- ===================================== CONTACT BUTTONS LIKE TWITTER =====================================
-          <center>
-            <a class="btn btn-danger btn-large" href="#"><i class="icon-road icon-white"></i> Get Started </a>
-                        <span style="white-space: nowrap;">
-                    <a class="btn btn-primary btn-large" href="https://twitter.com/Ghezal_ahmadzai"><i class="icon-user icon-white"></i>Twitter</a>
-                    <a class="btn btn-primary btn-large" href="mailto:ghezalahmad.zia@outlook.com"><i class="icon-envelope icon-white"></i> Email</a></span><br />
 
-          </center>
-
-        -->
-
-
-
-    </div>
 
 </div>
 </div>
@@ -106,56 +106,7 @@
 
 
 
-<!-- ===================================== WHAT CAN WE OFFER ===================================== -->
 
-
-<div class="container">
-  <div class="row-fluid">
-    <div class="span12">
-      <center><h2>What we can offer</h2></center>
-      <br/>
-      <br/>
-
-
-      <div class="span1">
-      </div>
-
-      <div class="span3">
-        <img src="pic/road1.png">
-        <br/>
-        <h3>Our Network</h3>
-        <p>We connect 34 province of AFG<br/>
-          We are here to help our people.</p>
-      </div>
-
-      <div class="span1">
-      </div>
-
-      <div class="span3">
-        <img src="pic/award.png">
-        <h3>our Product</h3>
-
-        <p>We connect 34 province of AFG<br/>
-          We are here to help our people.</p>
-      </div>
-
-
-      <div class="span3">
-        <img src="pic/creative.png">
-        <h3>our mission</h3>
-        <p>We connect 34 province of AFG<br/>
-          We are here to help our people.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<br/>
-<br/>
 
 <!-- ===================================== MEET TEAM ===================================== -->
 
@@ -166,53 +117,7 @@
 
 
 
-      <div class="row-fluid">
-        <div class="span12">
-          <center><h2 class="col">Who we are</h2></center>
-          <br/>
-
-          <div class="span1">
-          </div>
-
-          <div class="span3">
-            <img src="pic/hamid.jpg" class="img-circle">
-            <br/>
-            <h3>Zia</h3>
-            We are happy,because serve you are<br/>
-            <a href="https://twitter.com/Ghezal_ahmadzai"><i class="icon-user icon-white"></i></a>
-            <a href="https://twitter.com/Ghezal_ahmadzai"><i class="icon-envelope icon-white"></i></a>
-
-          </div>
-
-
-          <div class="span1">
-          </div>
-          <div class="span3">
-            <img src="pic/hamid.jpg" class="img-circle">
-            <h3>Alizai</h3>
-
-            <a href="https://twitter.com/Ghezal_ahmadzai"><i class="icon-user icon-white"></i></a>
-            <a href="https://twitter.com/Ghezal_ahmadzai"><i class="icon-envelope icon-white"></i></a>
-          </div>
-
-
-
-          <div class="span3">
-            <img src="pic/hamid.jpg" class="img-circle">
-            <h3>KhanZai</h3>
-            I am the right one
-
-            <a href="https://twitter.com/Ghezal_ahmadzai"><i class="icon-user icon-white"></i></a>
-            <a href="https://twitter.com/Ghezal_ahmadzai"><i class="icon-envelope icon-white"></i></a>
-          </div>
-
-        </div>
-      </div>
-
-
-
-
-
+      
 
 
 
