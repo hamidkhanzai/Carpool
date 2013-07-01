@@ -18,9 +18,7 @@ class RoutsController < ApplicationController
     end
 
   end
-  def search
-    
-  end
+
  
   # GET /routs/1
   # GET /routs/1.json
@@ -61,13 +59,17 @@ class RoutsController < ApplicationController
   # POST /routs
   # POST /routs.json
   def create
+
+
     @rout = Rout.new(params[:rout])
+    @rout.travel_date=params[:travel_date].to_date
 
     respond_to do |format|
       if @rout.save
         format.html { redirect_to @rout, notice: 'Rout was successfully created.' }
-        format.json { render json: @rout, status: :created, location: @rout }
+      format.json { render json: @rout, status: :created, location: @rout }
       else
+        @cars =Car.where("user_id=?",current_user.id)
         format.html { render action: "new" }
         format.json { render json: @rout.errors, status: :unprocessable_entity }
       end

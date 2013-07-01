@@ -1,4 +1,4 @@
-<div style="height: 400px">
+<div style="height: 600px">
 <%= form_tag({:action=>'list'},:method => "post", :class => "") do %>
 
 
@@ -8,11 +8,11 @@
       <table  >
         <tr>
           <td><%= label_tag "from"%></td>
-          <td><%= select_tag :d_from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
+          <td><%= select_tag :d_from, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh","Khost", "Sarepool"])%> </td>
         </tr>
         <tr>
           <td> <%= label_tag "Distanation"%></td>
-          <td><%= select_tag :d_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+          <td><%= select_tag :d_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh","Khost", "Sarepool"]) %></td>
         </tr>
         <tr>
           <td><%= label_tag "Time"%></td>

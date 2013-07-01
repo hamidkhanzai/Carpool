@@ -38,6 +38,7 @@
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v1.4.0, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faraday (v0.8.7, ruby-1.9.3-p392 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gmaps4rails (v1.5.6, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v2.0.5, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.2, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="httpauth (v0.2.0, ruby-1.9.3-p392 (1)) [gem]" level="application" />

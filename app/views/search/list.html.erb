@@ -32,9 +32,8 @@
           <td><%= rout.travel_date %></td>
           <td><%= rout.travel_t %></td>
 
-          <td><%= link_to 'Show', rout %></td>
-          <td><%= link_to 'Edit', edit_rout_path(rout) %></td>
-          <td><%= link_to 'Destroy', rout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Details',search_path(:id => rout.id)  %></td>
+
 
 
         </tr>

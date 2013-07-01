@@ -6,11 +6,11 @@
       <table  >
     <tr>
       <td><%= f.label "from",:class=>"label label-info"%></td>
-      <td><%= f.select :d_from,  options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"])%> </td>
+      <td><%= f.select :d_from,  options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh","Khost", "Sarepool"])%> </td>
     </tr>
     <tr>
      <td> <%= f.label :Destination,:class=>"label label-info"%></td>
-      <td><%= f.select  :d_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh", "Sarepool"]) %></td>
+      <td><%= f.select  :d_to, options_for_select(["Kabul", "Herat","Kandahar","Nangarhar","Balkh","Khost", "Sarepool"]) %></td>
     </tr>
     <tr class="controls">
 
@@ -39,7 +39,8 @@
 
     <tr>
      <td><%= f.label  :Car_Plate_Number ,:class=>"label label-info"%><br /></td>
-      <td><%= collection_select(:plate, :car_plate, @cars, :number_plate,:number_plate ) %>      </td>
+      <td><%= f.collection_select(:car_id,  @cars, :id,:number_plate,:prompt => true ) %>      </td>
+
     </tr>
     
     <tr>
@@ -63,4 +64,6 @@
     $('[data-behaviour~=datepicker]').datepicker({
         dateFormat: 'yy-mm-dd'
     })
+
+
 </script>

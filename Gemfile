@@ -6,6 +6,7 @@ gem 'devise'
 gem "paperclip", "~> 3.0"
 gem 'omniauth-facebook'
 gem 'jquery-ui-rails'
+gem 'gmaps4rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

@@ -8,6 +8,7 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+
 .pagination {
     padding: 3px;
     margin: 15px;
@@ -502,6 +503,8 @@ a:focus {
 
 .row-fluid .span12 {
     width: 100%;
+
+
     *width: 99.94680851063829%;
 }
 
