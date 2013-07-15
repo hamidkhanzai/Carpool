@@ -24,7 +24,9 @@
 
       <td>
        <input type="text" value="<%= @t_date %>"  data-behaviour='datepicker' name="travel_date">
+       
       </td>
+      
 
     </tr>
     
@@ -39,7 +41,7 @@
 
     <tr>
      <td><%= f.label  :Car_Plate_Number ,:class=>"label label-info"%><br /></td>
-      <td><%= collection_select(:plate, :car_plate, @cars, :number_plate,:number_plate ) %>      </td>
+      <td><%= f.collection_select(:car_id, @cars,:id, :number_plate,{:prompt => true}) %>      </td>
     </tr>
     
     <tr>
