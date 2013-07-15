@@ -14,6 +14,6 @@ class CreateRouts < ActiveRecord::Migration
        
     end
     add_index :routs, :userId
-    add_index :routs, :car_id
+
   end
 end

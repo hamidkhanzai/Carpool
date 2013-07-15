@@ -1,0 +1,48 @@
+<div class="accordion-group">
+  <h3>Contact information </h3>
+<table class="table">
+
+  <tr><th>Full Name</th>
+  <th>Phone Number</th>
+  <th>Email</th></tr>
+  <tr><td><%= "#{@user.first_name}  #{@user.last_name}" %></td>
+    <td><%= @user.phone %></td>
+    <td><%= @user.email %></td>
+  </tr>
+
+</table>
+</div>
+<br><br>
+
+
+<div class="accordion-group">
+  <h3>Routs Information </h3>
+  <table class="table">
+
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Time</th>
+    <th>Date</th>
+    <th>Free Seats</th>
+    </tr>
+    <tr><td><%= @data.d_from %></td>
+      <td><%= @data.d_to %></td>
+      <td><%= @data.travel_t %></td>
+      <td><%= @data.travel_date %></td>
+      <td><%= @data.free_seats %></td>
+    </tr>
+
+  </table>
+  </div>
+<br><br>
+    <div class="accordion-group">
+            <h3>Map</h3>
+      <%=
+          gmaps({ "direction" => {
+                  "data"    => { "from" => "#{@data.d_from}, Afghanistan", "to" =>  "#{@data.d_to}, Afghanistan"} ,
+                  "options" => { "display_panel" => true, "panel_id" => "instructions","avoidHighways"=>false}
+          }
+                })
+      %>
+     </div>

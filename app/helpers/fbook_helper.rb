@@ -1,0 +1,2 @@
+module FbookHelper
+end

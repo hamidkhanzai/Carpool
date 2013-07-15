@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130521143138) do
+ActiveRecord::Schema.define(:version => 20130701161209) do
 
   create_table "cars", :force => true do |t|
     t.integer  "user_id"
@@ -53,22 +53,17 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
     t.string   "travel_t"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
   end
 
-  add_index "routs", ["car_id"], :name => "index_routs_on_car_id"
   add_index "routs", ["userId"], :name => "index_routs_on_userId"
-
-  create_table "user_types", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 40
     t.string   "last_name",              :limit => 40
     t.string   "username",               :limit => 30
-    t.string   "password",               :limit => 100
     t.string   "email",                  :limit => 50
     t.string   "phone",                  :limit => 15
     t.integer  "nid_no"
@@ -86,6 +81,10 @@ ActiveRecord::Schema.define(:version => 20130521143138) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "uid"
+    t.string   "provider"
+    t.boolean  "isDriver"
+    t.string   "imgPath"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

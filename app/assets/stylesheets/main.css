@@ -8,6 +8,21 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+
+.Nav-left{
+	height: 520px;
+	width:200;
+	float:left;
+	
+	
+}
+.Nav-right{
+	height: 520px;
+	width:200;
+	float:right;
+	
+	
+}
 .pagination {
     padding: 3px;
     margin: 15px;
@@ -502,6 +517,8 @@ a:focus {
 
 .row-fluid .span12 {
     width: 100%;
+
+
     *width: 99.94680851063829%;
 }
 

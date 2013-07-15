@@ -1,11 +1,17 @@
 Carpool::Application.routes.draw do
+  get "fbook/new"
+
+  get "fbook/create"
+
   resources :reports
 
 
-  devise_for :users
+  devise_for :users , :controllers => { :omniauth_callbacks => "fbook" }
   resources :cars
   resources  :users
-
+ # get   '/login', :to => 'fbook#new', :as => :login
+ # match '/auth/:provider/callback', :to => 'fbook#create'
+  #match '/auth/failure', :to => 'fbook#failure'
 
   match "/users/admin/:id" => "users#admin"
   devise_for :routs
@@ -14,6 +20,7 @@ Carpool::Application.routes.draw do
 
   get "routs/search"
   post "search/list"
+  get "search/show"
   get("pages/home")
   get("pages/about")
   get("pages/contact")
