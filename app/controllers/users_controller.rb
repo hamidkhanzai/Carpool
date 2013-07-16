@@ -60,6 +60,7 @@ class UsersController < ApplicationController
 
 
   def admin
+    if current_user.Admin?
     @user=User.find(params[:id])
     if @user.update_attribute(:Admin,'true')
 
@@ -67,6 +68,20 @@ class UsersController < ApplicationController
     else
       flash[:alert]= "Could not promote user to Admin"
     end
+    end
     index
+  end
+  def promote
+  if current_user.Admin?
+    @user=User.find(params[:id])
+
+    if @user.update_attribute(:isDriver,'true')
+      flash[:notice] = "User successfully Promoted"
+      redirect_to (users_path)
+    else
+      flash[:alert]= "There are Some problems please try again"
+      render 'accounts/list'
+    end
+   end
   end
 end

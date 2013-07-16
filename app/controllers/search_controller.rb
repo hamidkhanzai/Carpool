@@ -7,8 +7,9 @@ class SearchController < ApplicationController
   end
 
   def show
-    @data=Rout.joins(:car).find(params[:id])
-    @user=User.find(current_user.id)
+
+    @data=Rout.find(params[:id])
+    @user=User.find(@data.user_id)
     @json = @data.to_gmaps4rails
   end
 

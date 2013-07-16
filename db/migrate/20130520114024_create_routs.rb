@@ -3,7 +3,7 @@ class CreateRouts < ActiveRecord::Migration
     create_table :routs do |t|
       t.string :d_from
       t.string :d_to
-      t.integer :userId
+      t.integer :user_id
       t.integer :car_id
       t.text :description
       t.integer :free_seats
@@ -13,7 +13,7 @@ class CreateRouts < ActiveRecord::Migration
       t.timestamps
        
     end
-    add_index :routs, :userId
+    add_index :routs, :user_id
 
   end
 end
