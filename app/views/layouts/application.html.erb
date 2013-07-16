@@ -59,7 +59,7 @@
       </ul>
 
      <div class="social"><a href="https://www.facebook.com/groups/501464039927455/"><%=image_tag("facebook.png")  %></a>&nbsp&nbsp<a href="#"><%=image_tag("twitter.png")  %></a>&nbsp&nbsp
-     	<a href="#"> <%=image_tag("myspace.png")  %></a>&nbsp&nbsp <a href="#"><%=image_tag("digg.png")  %></a> </div>
+     	<a href="#"> <%=image_tag("myspace.png")  %></a>&nbsp&nbsp <a href="#"><%=image_tag("digg.png")  %> <%= link_to 'Report A Driver',  new_report_path  %></a> </div>
 
     </div>
   </div>
@@ -67,11 +67,13 @@
 <!-- End of Navbar -->
 
 <div class="Nav-left">
-	<%= image_tag("car-nav.jpg")%>
 	
+	<%= link_to(image_tag("r-b.jpg") , new_report_path)%><br />
+	
+	 
 	</div>
 <div class="Nav-right">
-	<%= image_tag("car-nav.jpg")%>
+	<%= image_tag("r-nav.jpg")%>
 	
 	</div>
 <!--Start of the body of the page -->
