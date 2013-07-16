@@ -36,6 +36,7 @@
 
           <li><%= link_to("HOME", pages_home_path)%> </li>
      
+
         <li><%= link_to 'SEARCH',   search_index_path  %></li>
        
         <li><%= link_to("ABOUT US", pages_about_path)%></li>
@@ -52,8 +53,8 @@
             <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
               </li>
               <li>
-              <%= link_to 'SIGN UP',  new_user_registration_path  %>
-          <% end %></li>
+              <%= link_to 'SIGN UP',  new_user_registration_path  %></li>
+          <% end %>
 	
       </ul>
 
@@ -65,8 +66,14 @@
 </div>
 <!-- End of Navbar -->
 
-
-
+<div class="Nav-left">
+	<%= image_tag("car-nav.jpg")%>
+	
+	</div>
+<div class="Nav-right">
+	<%= image_tag("car-nav.jpg")%>
+	
+	</div>
 <!--Start of the body of the page -->
 
 <div class="container">
@@ -132,23 +139,19 @@
 
 
 
-      <div class="mc-field-group">
-        <h4>Carpool Afghanistan always with you!</h4>
-
-      </div>
-      <label for="mce-EMAIL"><span>No lie. We hate lie too.</span></label>
-
+     
+     
       <!--End -->
 
       <!-- ===================================== START FOOTER ===================================== -->
-      <div class="clear"></div>
-      <div id="footer">
+      
+      <div >
         &copy; Copyright 2013 All Rights Reserved. The
         <a href="http://www.carpoolafghanistan.com">Carpool AFGHANISTAN</a> ¥
-        build by team of
-        <a href="https://www.facebook.com/groups/131081877082483/">Afghan Student TU Berlin</a>
+        build by team of:
+        <a href="https://www.facebook.com/groups/131081877082483/">Afghan Student at TU Berlin</a>
       </div>
-
+ 
     </div>
   </div>
 </div>

@@ -9,6 +9,20 @@
  */
 
 
+.Nav-left{
+	height: 520px;
+	width:200;
+	float:left;
+	
+	
+}
+.Nav-right{
+	height: 520px;
+	width:200;
+	float:right;
+	
+	
+}
 .pagination {
     padding: 3px;
     margin: 15px;
