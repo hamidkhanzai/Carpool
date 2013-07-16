@@ -9,15 +9,20 @@ Carpool::Application.routes.draw do
   devise_for :users , :controllers => { :omniauth_callbacks => "fbook" }
   resources :cars
   resources  :users
+  resource :accounts
+  match 'acmounts' => 'accounts/index'
  # get   '/login', :to => 'fbook#new', :as => :login
  # match '/auth/:provider/callback', :to => 'fbook#create'
   #match '/auth/failure', :to => 'fbook#failure'
 
   match "/users/admin/:id" => "users#admin"
+  match "/users/promote/:id" => "users#promote"
+  match "/accounts/check/:id"=> "accounts#check"
   devise_for :routs
   resources :search
   resources  :routs
 
+  get 'accounts/list'
   get "routs/search"
   post "search/list"
   get "search/show"

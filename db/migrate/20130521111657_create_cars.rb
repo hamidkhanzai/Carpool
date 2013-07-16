@@ -11,5 +11,6 @@ class CreateCars < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :cars,:user_id
   end
 end

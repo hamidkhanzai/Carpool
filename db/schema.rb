@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130701161209) do
+ActiveRecord::Schema.define(:version => 20130702125216) do
+
+  create_table "accounts", :force => true do |t|
+    t.integer  "user_id"
+    t.boolean  "license"
+    t.boolean  "privateCar"
+    t.boolean  "checked"
+    t.boolean  "policy"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "cars", :force => true do |t|
     t.integer  "user_id"
@@ -44,7 +55,7 @@ ActiveRecord::Schema.define(:version => 20130701161209) do
   create_table "routs", :force => true do |t|
     t.string   "d_from"
     t.string   "d_to"
-    t.integer  "userId"
+    t.integer  "user_id"
     t.integer  "car_id"
     t.text     "description"
     t.integer  "free_seats"
@@ -58,7 +69,7 @@ ActiveRecord::Schema.define(:version => 20130701161209) do
     t.boolean  "gmaps"
   end
 
-  add_index "routs", ["userId"], :name => "index_routs_on_userId"
+  add_index "routs", ["user_id"], :name => "index_routs_on_userId"
 
   create_table "users", :force => true do |t|
     t.string   "first_name",             :limit => 40

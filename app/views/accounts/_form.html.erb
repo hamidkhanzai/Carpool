@@ -1,0 +1,30 @@
+<%= form_for(@account,:html=> {:multipart =>true}) do |f| %>
+
+    <div style="width: 500px">
+      <table class="table" >
+        <tr>
+
+          <td><%= f.label "Do you have driver license?"%></td>
+          <td><%= f.check_box :license%> </td>
+        </tr>
+        <tr>
+          <td> <%= f.label "Do you have private Car?"%></td>
+          <td><%= f.check_box :privateCar %></td>
+        </tr>
+        <tr>
+          <td colspan="2"> <%= f.label "About yourself and you Job Details Information"%></td>
+
+        </tr>
+        <tr >
+         <td colspan="2"><%= f.text_area :description  %></td>
+
+
+        </tr>
+        <tr><td colspan="2"><%= f.label "Do Your agree with term and Policies of Carpool?" %></td>
+          <td colspan="2"><%= f.check_box :policy %> </tr>
+       <tr> <td><%= f.submit "Send Request", :class=>"btn btn-primary"%></td><td></td></tr>
+      </table>
+
+    </div>
+<% end %>
+

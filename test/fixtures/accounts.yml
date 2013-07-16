@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  license: 
+  privateCar: 
+  checked: 
+  description: 
+  policy: false
+
+two:
+  license: 
+  privateCar: 
+  checked: 
+  description: 
+  policy: false
