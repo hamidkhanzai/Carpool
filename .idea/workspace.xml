@@ -117,7 +117,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="12" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-16.346153">
+            <state line="107" column="10" selection-start="3025" selection-end="3025" vertical-scroll-proportion="-7.1923075">
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -135,19 +135,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/routs/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-6.423077">
+            <state line="43" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.55757576">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="42" selection-start="845" selection-end="845" vertical-scroll-proportion="-0.123636365">
+            <state line="78" column="22" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1263,7 +1263,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3180328" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3180328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3180328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33442622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1593,16 +1593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="12" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-16.346153">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/routs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="0" selection-start="1446" selection-end="1446" vertical-scroll-proportion="-15.423077">
@@ -1610,16 +1600,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/routs/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-6.423077">
+        <state line="78" column="22" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="42" selection-start="845" selection-end="845" vertical-scroll-proportion="-0.123636365">
+        <state line="107" column="10" selection-start="3025" selection-end="3025" vertical-scroll-proportion="-7.1923075">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/routs/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.55757576">
           <folding />
         </state>
       </provider>
