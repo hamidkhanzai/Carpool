@@ -10,17 +10,20 @@
 
 
 .Nav-left{
-	height: 520px;
+	height: auto;
 	width:200;
 	float:left;
+	padding-left: 2px;
 	
 	
 }
 .Nav-right{
-	height: 520px;
+	height: auto;
 	width:200;
 	float:right;
+	padding-right: 2px;
 	
+    
 	
 }
 .pagination {
@@ -311,6 +314,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
+    border-left:#24748C 2px;
     color: #333333;
     background-color: #ffffff;
 }
@@ -375,8 +379,8 @@ a:focus {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
     width: 940px;
+    
 }
-
 .span12 {
     width: 940px;
 
@@ -711,7 +715,11 @@ a:focus {
 .container {
     margin-right: auto;
     margin-left: auto;
+    padding-left: 2px;
+    padding-right: 3px;
     *zoom: 1;
+    border-left:1px solid #005580;
+    border-right:1px solid #005580;
 }
 
 .container:before,

@@ -105,24 +105,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="accounts_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/accounts_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="24" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routs_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/routs_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="21" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,7 +117,37 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="35" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.0">
+            <state line="43" column="12" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-16.346153">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/routs/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="0" selection-start="1446" selection-end="1446" vertical-scroll-proportion="-15.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/routs/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-6.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="42" selection-start="845" selection-end="845" vertical-scroll-proportion="-0.123636365">
               <folding />
             </state>
           </provider>
@@ -150,10 +162,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="815" selection-end="815" vertical-scroll-proportion="0.26287264">
+            <state line="18" column="18" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -186,15 +198,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="2" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -215,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/routs/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/routs/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/home.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/cars_controller.rb" />
@@ -229,8 +231,9 @@
         <option value="$PROJECT_DIR$/app/controllers/routs_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/account.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/routs/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -315,7 +318,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -719,9 +721,32 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -802,10 +827,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1161,15 +1186,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Production: carpool" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Development: carpool" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="6" class="java.lang.String" itemvalue="IRB console.Rails console: carpool" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.db:rollback" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.db:fixtures:load" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: carpool" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.db:rollback" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.db:fixtures:load" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Production: carpool" />
+      <item index="8" class="java.lang.String" itemvalue="Rails.Development: carpool" />
     </list>
     <recent_temporary>
       <list size="4">
@@ -1228,13 +1253,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1292" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18484849" sideWeight="0.6819672" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2796748" sideWeight="0.6819672" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28455284" sideWeight="0.6819672" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3180328" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1316,21 +1341,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/list.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="75" selection-start="1683" selection-end="1752" vertical-scroll-proportion="-6.1153846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/routs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1445" selection-end="1445" vertical-scroll-proportion="-8.576923" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="42" selection-start="841" selection-end="841" vertical-scroll-proportion="0.2925532" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="2" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
@@ -1382,8 +1392,8 @@
             <node x="" y="">User</node>
             <node x="" y="">Car</node>
             <node x="" y="">Rout</node>
-            <node x="" y="">Account</node>
             <node x="" y="">Report</node>
+            <node x="" y="">Account</node>
           </nodes>
           <notes />
           <edges />
@@ -1417,11 +1427,11 @@
             <node x="" y="">Paperclip::Validators</node>
             <node x="" y="">Paperclip::Callbacks</node>
             <node x="" y="">ActiveRecord::Explain</node>
-            <node x="" y="">ActiveRecord::Integration</node>
             <node x="" y="">ActiveRecord::Persistence</node>
+            <node x="" y="">ActiveRecord::Integration</node>
             <node x="" y="">ActiveRecord::AttributeMethods::Query</node>
-            <node x="" y="">ActiveRecord::Translation</node>
             <node x="" y="">ActiveRecord::QueryCache::ClassMethods</node>
+            <node x="" y="">ActiveRecord::Translation</node>
             <node x="" y="">ActiveRecord::Serialization</node>
             <node x="" y="">ActiveModel::Callbacks</node>
             <node x="" y="">ActiveModel::Naming</node>
@@ -1451,28 +1461,28 @@
             <node x="" y="">Paperclip::Schema::CommandRecorder</node>
             <node x="" y="">ActiveModel::Validations::HelperMethods</node>
             <node x="" y="">ActiveRecord::Store</node>
-            <node x="" y="">ActiveRecord::NestedAttributes</node>
             <node x="" y="">ActiveModel::Observing</node>
-            <node x="" y="">ActiveRecord::Inheritance</node>
+            <node x="" y="">ActiveRecord::NestedAttributes</node>
             <node x="" y="">ActiveSupport::Concern</node>
+            <node x="" y="">ActiveRecord::Inheritance</node>
             <node x="" y="">ActiveRecord::ModelSchema</node>
             <node x="" y="">ActiveRecord::IdentityMap</node>
             <node x="" y="">ActiveModel::Validations::Callbacks</node>
-            <node x="" y="">Paperclip::Callbacks::Running</node>
-            <node x="" y="">ActiveRecord::Timestamp</node>
             <node x="" y="">Paperclip::ClassMethods</node>
+            <node x="" y="">ActiveRecord::Timestamp</node>
+            <node x="" y="">Paperclip::Callbacks::Running</node>
             <node x="" y="">ActiveRecord::Transactions</node>
-            <node x="" y="">ActiveRecord::AttributeMethods::Read</node>
             <node x="" y="">ActiveRecord::AutosaveAssociation::AssociationBuilderExtension</node>
+            <node x="" y="">ActiveRecord::AttributeMethods::Read</node>
             <node x="" y="">ActiveRecord::AttributeAssignment</node>
             <node x="" y="">ActiveRecord::AttributeMethods::TimeZoneConversion</node>
             <node x="" y="">ActiveSupport::DescendantsTracker</node>
             <node x="" y="">ActiveRecord::AttributeMethods::PrimaryKey</node>
-            <node x="" y="">ActiveRecord::AttributeMethods::Write</node>
             <node x="" y="">ActiveModel::Translation</node>
+            <node x="" y="">ActiveRecord::AttributeMethods::Write</node>
             <node x="" y="">ActiveRecord::Base</node>
-            <node x="" y="">ActiveRecord::AutosaveAssociation</node>
             <node x="" y="">ActiveRecord::CounterCache</node>
+            <node x="" y="">ActiveRecord::AutosaveAssociation</node>
             <node x="" y="">ActiveModel::Validations</node>
             <node x="" y="">ActiveRecord::Callbacks</node>
             <node x="" y="">Paperclip::Validators::HelperMethods</node>
@@ -1514,11 +1524,11 @@
             <node x="" y="">multipart-post</node>
             <node x="" y="">rack-cache</node>
             <node x="" y="">multi_json</node>
-            <node x="" y="">omniauth-facebook</node>
             <node x="" y="">will_paginate</node>
+            <node x="" y="">omniauth-facebook</node>
             <node x="" y="">mime-types</node>
-            <node x="" y="">railties</node>
             <node x="" y="">activeresource</node>
+            <node x="" y="">railties</node>
             <node x="" y="">cocaine</node>
             <node x="" y="">builder</node>
             <node x="" y="">journey</node>
@@ -1550,12 +1560,12 @@
             <node x="" y="">jquery-rails</node>
             <node x="" y="">thor</node>
             <node x="" y="">activemodel</node>
-            <node x="" y="">activesupport</node>
             <node x="" y="">sprockets</node>
-            <node x="" y="">uglifier</node>
+            <node x="" y="">activesupport</node>
             <node x="" y="">coffee-rails</node>
-            <node x="" y="">bcrypt-ruby</node>
+            <node x="" y="">uglifier</node>
             <node x="" y="">devise</node>
+            <node x="" y="">bcrypt-ruby</node>
             <node x="" y="">i18n</node>
             <node x="" y="">hashie</node>
             <node x="" y="">hike</node>
@@ -1569,13 +1579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="35" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="13" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
@@ -1585,7 +1588,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="815" selection-end="815" vertical-scroll-proportion="0.26287264">
+        <state line="18" column="18" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="12" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-16.346153">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/routs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="1446" selection-end="1446" vertical-scroll-proportion="-15.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/routs/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-6.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="42" selection-start="845" selection-end="845" vertical-scroll-proportion="-0.123636365">
           <folding />
         </state>
       </provider>
