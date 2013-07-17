@@ -10,7 +10,8 @@ Carpool::Application.routes.draw do
   resources :cars
   resources  :users
   resource :accounts
-  match 'acmounts' => 'accounts/index'
+
+
  # get   '/login', :to => 'fbook#new', :as => :login
  # match '/auth/:provider/callback', :to => 'fbook#create'
   #match '/auth/failure', :to => 'fbook#failure'
@@ -29,6 +30,7 @@ Carpool::Application.routes.draw do
   get("pages/home")
   get("pages/about")
   get("pages/contact")
+
   
 
   # The priority is based upon order of creation:
@@ -80,7 +82,7 @@ Carpool::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'users#home'
+   root :to => 'pages#home'
 
   # See how all your routes lay out with "rake routes"
 

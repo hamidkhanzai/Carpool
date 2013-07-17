@@ -1,50 +1,43 @@
-<!-- ===================================== WHAT CAN WE OFFER ===================================== -->
+<div style="height: 600px">
+  <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
- <div class="navbar-inner">
-<div class="container">
-  <div class="row-fluid">
-    <div class="span12">
-      <center><h2>What we can offer</h2></center>
-      <br/>
-      <br/>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="active item"> <%= image_tag 'http://twitter.github.io/bootstrap/assets/img/examples/slide-02.jpg',:width => '1500px' %></div>
+      <div class="item"><%= image_tag"badghis2.png", :width => "1200px"  %></div>
 
+      <div class="item"><%= image_tag "kabul2.png"  %>
 
-      <div class="span1">
       </div>
+      <div class="item"><%= image_tag "badakhshan2.png" %>
 
-      <div class="span3">
-        <%= image_tag("mission.jpg")%>
-        <br/>
-        <h3>Our Network</h3>
-        <p>We connect 34 province of AFG<br/>
-          We are here to help our people.</p>
-      </div>
-
-      <div class="span1">
-      </div>
-
-      <div class="span3">
-        <%= image_tag("mission.jpg")%>
-        <h3>our Product</h3>
-
-        <p>We connect 34 province of AFG<br/>
-          We are here to help our people.</p>
-      </div>
-
-
-      <div class="span3">
-        <%= image_tag("mission.jpg")%>
-        <h3>our mission</h3>
-        <p>We connect 34 province of AFG<br/>
-          We are here to help our people.</p>
       </div>
     </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+
+
+
+
+
   </div>
 </div>
+<% if user_signed_in? %>
+ <% if current_user.isDriver %>
+  <% else %>
+
+
+<div class="carousel-caption">
+  <%= link_to "Premuim Account",accounts_path,:class => 'btn btn-primary btn-large' %>
+
+  <p>Suggest for Premium Account now. You will be able to register routes for your own trip <br> which would be cheap and enjoyable</p>
 </div>
-
-
-
-
-<br/>
-<br/>
+    <% end %>
+<% end %>

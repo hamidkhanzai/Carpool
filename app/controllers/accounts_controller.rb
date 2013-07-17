@@ -1,8 +1,10 @@
 class AccountsController < ApplicationController
   before_filter :authenticate_user!
-  def index
-
+  def show
+    @account=Account.new
+    render 'accounts/new'
   end
+
   def new
 
      @account=Account.new
@@ -20,7 +22,7 @@ class AccountsController < ApplicationController
   end
   def list
     if current_user.Admin?
-      @accounts=Account.where("checked=?",false).paginate(:page => params[:page], :per_page => 5)
+      @accounts=Account.paginate(:page => params[:page], :per_page => 5)
     else
       flash[:alert]="You don't have Access to these contents"
       redirect_to (pages_home_path)

@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  before_filter :authenticate_user! ,:except => :home
+  before_filter :authenticate_user!
 
-  def home
-    render 'users/home'
+  def show
+          @users=User.find(params[:id])
   end
 
   def index

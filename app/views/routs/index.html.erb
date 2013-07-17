@@ -32,7 +32,27 @@
       <td><%= rout.travel_date %></td>
       <td><%= rout.travel_t %></td>
      
-      <td><%= link_to 'Show', rout %></td>
+      <td>
+
+
+        <div class="btn-group">
+          <button class="btn btn-primary">Action</button>
+          <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown">
+            <span class="caret "></span>
+          </button>
+          <ul class="dropdown-menu">
+
+            <li> <%= link_to 'Edit', edit_rout_path(rout) %></li>
+            <li><%= link_to 'Destroy', rout, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+            <li class="divider"></li>
+            <li><%= link_to("Register New Car", new_rout_path)%></li>
+
+          </ul>
+        </div>
+
+
+
+      </td>
     
  
     </tr>
@@ -46,4 +66,5 @@
    
 </div>
 </div>
-<%=will_paginate @routs%>
+
+<%= will_paginate @routs,:previous_label=>"<<",:next_label=>">>"  %>

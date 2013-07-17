@@ -14,7 +14,11 @@ class RoutsController < ApplicationController
     if current_user.Admin?
     @routs = Rout.paginate(:page => params[:page], :per_page => 5).order("created_at DESC")
     else
-      @routs=Rout.paginate(:page => params[:page], :per_page => 5).where("userid=?",current_user.id).order("created_at DESC")
+      if current_user.isDriver?
+      @routs=Rout.paginate(:page => params[:page], :per_page => 5).where("user_id=?",current_user.id).order("created_at DESC")
+      else
+        redirect_to pages_home_path
+      end
     end
 
   end
@@ -24,7 +28,7 @@ class RoutsController < ApplicationController
   # GET /routs/1.json
   def show
    # @rout = Rout.find(params[:id])
-    @rout = Rout.find(params[:id],:include => :user, :joins => "INNER JOIN users ON routs.userId = users.id")
+    @rout = Rout.find(params[:id],:include => :user, :joins => "INNER JOIN users ON routs.user_id = users.id")
 
     respond_to do |format|
       format.html # show.html.erb

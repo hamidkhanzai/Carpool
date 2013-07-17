@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-
+  has_many :accounts
   has_many :cars
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

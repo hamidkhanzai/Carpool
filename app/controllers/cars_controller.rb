@@ -4,7 +4,11 @@ class CarsController < ApplicationController
       if current_user.Admin?
       @cars=Car.all
       else
+        if current_user.isDriver?
         @cars=Car.where(:user_id => current_user.id)
+        else
+          redirect_to pages_home_path
+          end
       end
 
  end

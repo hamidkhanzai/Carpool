@@ -42,6 +42,11 @@
         <li><%= link_to("ABOUT US", pages_about_path)%></li>
         
         <li><%= link_to("CONTACT", pages_contact_path)%></li>
+        <% if user_signed_in? %>
+
+                <li><%= link_to "PROFILE",users_path %></li>
+
+            <% end %>
 
 
          
@@ -55,25 +60,42 @@
               <li>
               <%= link_to 'SIGN UP',  new_user_registration_path  %></li>
           <% end %>
-	
+
+         <li> <% if user_signed_in? %>
+               <% if current_user.Admin? || current_user.isDriver? %>
+          <div class="btn-group">
+            <button class="btn ">Account Management</button>
+            <button class="btn dropdown-toggle " data-toggle="dropdown">
+              <span class="caret "></span>
+            </button>
+            <ul class="dropdown-menu">
+
+              <li><%= link_to("Your Routes Info",routs_path,:class => "action edit") %></li>
+              <li><%= link_to 'Your Cars Info', cars_path %></li>
+
+              <li class="divider"></li>
+              <li><%= link_to("Profile Management",users_path,:class => "action edit") %></li>
+              <% if current_user.Admin? %>
+
+              <li><%= link_to "Accounts Request",accounts_path%></li>
+              <% end %>
+
+            </ul>
+          </div>
+                <% end %>
+               <% end %>
+               </li>
+
+
       </ul>
 
-     <div class="social"><a href="https://www.facebook.com/groups/501464039927455/"><%=image_tag("facebook.png")  %></a>&nbsp&nbsp<a href="#"><%=image_tag("twitter.png")  %></a>&nbsp&nbsp
-     	<a href="#"> <%=image_tag("myspace.png")  %></a>&nbsp&nbsp <a href="#"><%=image_tag("digg.png")  %></a> </div>
+
 
     </div>
   </div>
 </div>
 <!-- End of Navbar -->
 
-<div class="Nav-left">
-	<%= image_tag("car-nav.jpg")%>
-	
-	</div>
-<div class="Nav-right">
-	<%= image_tag("car-nav.jpg")%>
-	
-	</div>
 <!--Start of the body of the page -->
 
 <div class="container">

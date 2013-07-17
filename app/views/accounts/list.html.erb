@@ -31,7 +31,7 @@
                 <span class="caret "></span>
               </button>
               <ul class="dropdown-menu">
-
+                <li><%= link_to "View User Info", {:action => 'show',:id=>account.user_id,:controller => :users} %></li>
                 <li><%= link_to("Promote",{:action => 'promote',:id=>account.user_id,:controller => :users},:class => "action edit") %></li>
 
                 <li><%= link_to("Mark as checked",{:action => "check",:id=>account.id},:class => "action edit") %></li>
